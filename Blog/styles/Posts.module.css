@@ -1,0 +1,10 @@
+.posts {
+  width: 100%;
+  color: white;
+  font-size: small;
+  padding: 10px;
+}
+
+.post__content {
+  margin-top: 1rem;
+}

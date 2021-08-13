@@ -1,0 +1,29 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-color: #1a2634;
+  --background-color: #0d1219;
+  --background-logo: #f9fafa;
+  --hamburger__btn-height : 3px;
+  --hamburger-background-color: white;
+  --card-background-color: #1a2634;
+}
+
+/* body {
+  background-color: var(--background-color);
+} */
