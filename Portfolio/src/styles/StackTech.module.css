@@ -1,0 +1,7 @@
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
