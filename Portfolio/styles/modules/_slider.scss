@@ -1,6 +1,6 @@
 .slider {
   margin-top: 5rem;
-  
+
   &__content {
     overflow: hidden;
     cursor: grab;
@@ -8,6 +8,7 @@
     position: relative;
     scrollbar-width: 10px;
     overflow-x: scroll;
+    height: 400px;
   }
 
   &__wrapper {
@@ -15,6 +16,5 @@
     grid-template-columns: repeat(100, minmax(20.5rem, 1fr));
     gap: 0 2rem;
     grid-template-areas: '.  .  .  .  .  .  .';
-    height: 100%;
   }
 }
