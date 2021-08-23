@@ -372,8 +372,8 @@ template {
   justify-content: center;
   position: sticky;
   top: 0;
+  margin-bottom: 4rem;
   background-color: white;
-  margin-bottom: auto;
   z-index: 10;
 }
 
@@ -430,30 +430,34 @@ template {
 }
 
 .about {
-  margin-top: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .about__img {
-  max-width: 70%;
+  display: block;
+  width: 100px;
+  height: 100px;
   margin-bottom: 1rem;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 30%;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
 }
 
 .about__description {
-  width: 90%;
-  text-align: center;
+  position: relative;
+  width: 100%;
 }
 
 .about__text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .arrow-container {
+  margin-top: 5rem;
   position: relative;
   width: 100%;
   height: 30px;
@@ -478,7 +482,6 @@ template {
   }
 }
 
-/** Modificadores de texto */
 .about__text--bold {
   font-weight: bold;
 }
@@ -487,8 +490,32 @@ template {
   box-shadow: 0 2px rgba(0, 255, 234, 0.452);
 }
 
+.anim-typewriter1 {
+  animation: typewriter 4s steps(44) 1s 1 normal both;
+}
+
+.anim-typewriter2 {
+  animation: typewriter 4s steps(44) 4s 1 normal both;
+}
+
+.anim-typewriter3 {
+  animation: typewriter 4s steps(44) 7s 1 normal both;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .stack {
-  margin-top: 4rem;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+  text-align: center;
 }
 
 .stack__img {
@@ -497,6 +524,7 @@ template {
 
 .slider {
   margin-top: 5rem;
+  text-align: center;
 }
 
 .slider__content {
