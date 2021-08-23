@@ -1,31 +1,7 @@
-.gallery {
+.stack {
   margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-}
 
-.gallery__content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-}
-
-.icon {
-  padding: 0.5rem;
-  border-radius: 7px;
-  background-color: #000000ee;
-  color: white;
-
-  &:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 1px 1px 3px black;
-  }
-
-  &__text {
-    display: inline;
-    margin-left: 5px;
+  &__img {
+    max-width: 100%;
   }
 }

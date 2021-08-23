@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 button {
@@ -24,7 +24,7 @@ button {
 }
 
 i {
-  font-size: x-large;
+  font-size: 3rem;
 }
 
 /* Document
@@ -365,17 +365,6 @@ template {
   display: none;
 }
 
-.footer {
-  width: 100%;
-  border-top: 1px solid black;
-  padding: 10px 0;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -441,7 +430,6 @@ template {
 }
 
 .about {
-  position: relative;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -449,8 +437,7 @@ template {
 }
 
 .about__img {
-  max-width: 80%;
-  max-height: 20%;
+  max-width: 70%;
   margin-bottom: 1rem;
   object-fit: contain;
   object-position: center;
@@ -470,14 +457,16 @@ template {
   position: relative;
   width: 100%;
   height: 30px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   font-size: xx-large;
 }
 
 .arrow-container .arrow {
   position: absolute;
-  animation: slidedown 1.2s infinite;
+  animation: slidedown 1.5s infinite;
 }
 
 @keyframes slidedown {
@@ -498,36 +487,12 @@ template {
   box-shadow: 0 2px rgba(0, 255, 234, 0.452);
 }
 
-.gallery {
+.stack {
   margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
 }
 
-.gallery__content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-}
-
-.icon {
-  padding: 0.5rem;
-  border-radius: 7px;
-  background-color: #000000ee;
-  color: white;
-}
-
-.icon:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 1px 1px 3px black;
-}
-
-.icon__text {
-  display: inline;
-  margin-left: 5px;
+.stack__img {
+  max-width: 100%;
 }
 
 .slider {
@@ -635,23 +600,4 @@ template {
   text-decoration: none;
   text-emphasis: none;
   color: white;
-}
-
-.footer__title {
-  font-size: x-large;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer__btn {
-  background-color: aquamarine;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  opacity: 0.5;
-  position: relative;
-  background-image: url("../../assets/images/upwards-arrow.svg");
-  background-size: 2rem;
-  background-position: center;
-  background-repeat: no-repeat;
 }
