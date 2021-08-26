@@ -419,6 +419,24 @@ template {
   background-color: #fbfbfe;
 }
 
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: 1.5rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 0.813rem;
+  margin-bottom: 3rem;
+}
+
+.section__title, .section__subtitle {
+  text-align: center;
+}
+
 .home__container {
   gap: 1rem;
 }
@@ -498,6 +516,22 @@ template {
 
 .home__scroll-arrow {
   font-size: 1.25rem;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .nav {

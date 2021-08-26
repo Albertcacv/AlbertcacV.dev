@@ -1,0 +1,17 @@
+.about {
+  &__description {
+    text-align: center;
+    margin-bottom: $mb-2-5;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: $mb-2-5;
+  }
+
+  &__buttons {
+      display: flex;
+      justify-content: center;
+  }
+}

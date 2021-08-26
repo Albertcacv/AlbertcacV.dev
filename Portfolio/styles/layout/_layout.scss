@@ -17,3 +17,22 @@
   z-index: $z-fixed;
   background-color: $body-color;
 }
+
+.section {
+  padding: 2rem 0 4rem;
+
+  &__title {
+    font-size: $h1-font-size;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: $small-font-size;
+    margin-bottom: $mb-3;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+}
