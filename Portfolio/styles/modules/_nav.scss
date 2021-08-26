@@ -1,0 +1,67 @@
+.nav {
+  max-width: 968px;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo,
+  &__toggle {
+    color: $title-color;
+    font-weight: $font-medium;
+  }
+
+  &__logo:hover {
+    color: $first-color;
+  }
+
+  &__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $first-color;
+    }
+  }
+
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $small-font-size;
+    color: $title-color;
+    font-weight: $font-medium;
+
+    &:hover {
+      color: $first-color;
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $first-color;
+
+    &:hover {
+      color: $first-color-alt;
+
+    }
+  }
+}
+
+/* show menu */
+.show-menu {
+  bottom: 0;
+}

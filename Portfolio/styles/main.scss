@@ -1,11 +1,14 @@
 //base files
+@import 'base/variables';
 @import 'base/base';
 @import 'base/reset';
+@import 'base/media';
+
+//layout files
+@import 'layout/layout';
+@import 'layout/home';
+@import 'layout/about';
 
 //modules files
-@import 'modules/header';
-@import 'modules/about';
-@import 'modules/stack';
-@import 'modules/slider';
-@import 'modules/card';
-@import 'modules/contact';
+@import 'modules/nav';
+@import 'modules/buttons';
