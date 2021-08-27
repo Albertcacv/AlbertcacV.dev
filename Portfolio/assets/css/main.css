@@ -720,6 +720,16 @@ template {
   outline: none;
 }
 
+.contact__information {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact__icon {
+  font-size: 4rem;
+}
+
 .nav {
   max-width: 968px;
   height: 3rem;
