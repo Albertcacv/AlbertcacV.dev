@@ -16,10 +16,7 @@
     />
 
     <!-- SWIPER CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!-- CSS -->
 
@@ -28,6 +25,9 @@
     <!-- MAIN JS-->
     <script defer src="assets/js/main.js"></script>
 
+    <!-- SWIPER JS -->
+    <script defer src="assets/js/swiper-bundle.min.js"></script>
+
     <!-- FAVICON-->
 
     <link
@@ -35,7 +35,7 @@
       href="assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <script defer src="main.js"></script>
+
     <title>Albertcacv</title>
   </head>
   <body>
@@ -63,6 +63,11 @@
             <li class="nav__item">
               <a class="nav__link" href="#projects">
                 <i class="uil uil-monitor nav__icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">
+                <i class="uil uil-message nav__icon"></i> Contact
               </a>
             </li>
             <li class="nav__item">
@@ -191,96 +196,262 @@
           </div>
         </div>
       </section>
-    </main>
-    <!--
-    <section class="about">
-      <img class="about__img" src="assets/images/logo.jpg" alt="Albertcacv" />
-      <section class="about__description" id="about">
-        <p class="about__text anim-typewriter1">Hola! Mi nombre es Alberto.</p>
-        <p class="about__text anim-typewriter2">
-          👉Desarrollador de software.<br />
-          👉Curioso de la ciberseguridad.
-        </p>
-        <p class="about__text anim-typewriter3">
-          Actualmente enfocado en el desarrollo web.
-        </p>
-      </section>
-      <div class="arrow-container">
-        <span class="arrow">⬇</span>
-      </div>
-    </section>
-    <section class="stack">
-      <img
-        src="https://github-readme-stats.vercel.app/api/wakatime?username=Albertcacv"
-        alt="AlbertcacV :: Top Langs"
-        class="stack__img"
-      />
-    </section>
 
-    <section class="slider" id="projects">
-      <h2>Mis proyectos ⬇</h2>
-      <div class="slider__content">
-        <div class="slider__wrapper">
-          <article class="card">
-            <h3 class="card__title">DevChallenges</h3>
-            <img class="card__img" src="assets/images/pre.png" alt="" />
-            <footer class="card__footer">
-              <a
-                href="https://github.com/Albertcacv/devchallenges"
-                target="_blank"
-                class="card__link"
-              >
-                <button class="card__btn card__btn--code">Code</button>
-              </a>
-              <a
-                href="https://albertcacv.github.io/devchallenges/"
-                target="_blank"
-                class="card__link"
-              >
-                <button class="card__btn card__btn--preview">Preview</button>
-              </a>
-            </footer>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Title</h3>
-            <img
-              class="card__img"
-              src="https://static2.bigstockphoto.com/3/9/2/large1500/293553937.jpg"
-              alt=""
-            />
-            <footer class="card__footer">
-              <a
-                href="https://github.com/Albertcacv/devchallenges"
-                target="_blank"
-              >
-                <button class="card__btn card__btn--code">Code</button>
-              </a>
-              <button class="card__btn card__btn--preview">Preview</button>
-            </footer>
-          </article>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">Technological stack</span>
+
+        <div class="skills__container container grid" data-id="front">
+          <div>
+            <!--FRONTEND-->
+            <div class="skills__content skills__close">
+              <header class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div>
+                  <h2 class="skills__title">Frontend development</h2>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </header>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">ReactJS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">VueJS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">NextJS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">GatsbyJS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">SASS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Tailwind</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--BACKEND -->
+            <div class="skills__content skills__close">
+              <header class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+                <div>
+                  <h2 class="skills__title">Backend development</h2>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </header>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">NodeJS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">NestJS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MongoDB</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MySQL</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Firebase</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">NextJS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">GatsbyJS</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--OTHER TECHNOLOGIES-->
+            <div class="skills__content skills__close">
+              <header class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h2 class="skills__title">Other technologies</h2>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </header>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Jest</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">TypeScript</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Java</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Go</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="contact">
-      <h2>Puedes encontrarme en: ⬇</h2>
-      <section class="contact__items">
-        <article class="icon">
-          <a
-            class="icon__link"
-            href="https://www.linkedin.com/in/alberto-ca%C3%B1o-%C3%A1lvarez/"
-          >
-            <i class="devicon-linkedin-plain"></i>
-            <h3 class="icon__text">Linkedin</h3>
-          </a>
-        </article>
-        <article class="icon">
-          <a class="icon__link" href="https://twitter.com/AlbertcacV">
-            <i class="devicon-twitter-original"></i>
-            <h3 class="icon__text">Twitter</h3>
-          </a>
-        </article>
       </section>
-    </section>
 
-  --></body>
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <!-- <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div class="qualification__button button--flex">
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+
+            <div class="qualification__button button--flex">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <div class="qualification__content">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle">León - University</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    <span>2018 - 2023</span>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__line"></span>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">My projects</h2>
+        <span class="section__subtitle">Outstanding projects</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                class="portfolio__img"
+                src="assets/images/previewDevChallenges.png"
+                alt=""
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Title</h3>
+                <p class="portfolio__description">Description</p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ARROWS -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- PAGINATION -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+      </section>
+    </main>
+  </body>
 </html>
