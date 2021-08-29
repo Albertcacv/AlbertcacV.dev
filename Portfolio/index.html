@@ -76,6 +76,8 @@
         <div class="nav__buttons">
           <!-- THEME CHANGE BUTTON -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <!-- TOGGLE BUTTON -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps nav__icon"></i>
           </div>
@@ -84,7 +86,7 @@
     </header>
 
     <main class="main">
-      <!-- HOME -->
+      <!--================== HOME ===========================-->
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
@@ -113,35 +115,7 @@
             </div>
 
             <div class="home__img">
-              <svg
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                class="home__blob"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <!-- <image
-                    class="home__blob-img"
-                    x="30"
-                    y="3"
-                    xlink:href="assets/images/profilePic.png"
-                  /> -->
-                </g>
-              </svg>
+              <img class="home__blob-img" src="assets/images/logo.jpg" />
             </div>
 
             <div class="home__data">
@@ -171,40 +145,62 @@
         </div>
       </section>
 
-      <!-- ABOUT -->
+      <!--================== ABOUT ===========================-->
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
-          <img src="assets/images/logo.jpg" alt="" class="about__img" />
-          <div class="about__data">
-            <p class="about__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              quidem exercitationem suscipit.
-            </p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="assets/images/about-img.jpg"
+                  alt=""
+                  class="about__img"
+                />
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-card-back__text">
+                  <img
+                    src="assets/images/about-img.jpg"
+                    alt=""
+                    class="flip-card-back__img"
+                  />
+                  <h2>Alberto Caño Álvarez</h2>
+                  <p>Software Developer</p>
+                  <p>Estudiante de Ingeniería Informática</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Amet ut dicta earum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="about__data">
             <div class="about__buttons">
               <a
                 download=""
                 href="assets/pdf/CV.pdf"
                 class="button button--flex"
               >
-                Download CV<i class="uil uil-download-alt button__icon"></i>
+                Download CV <i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SKILLS -->
+      <!--
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">Technological stack</span>
 
-        <div class="skills__container container grid" data-id="front">
+        <div class="skills__container container grid">
           <div>
-            <!--FRONTEND-->
+      
             <div class="skills__content skills__close">
               <header class="skills__header">
                 <i class="uil uil-brackets-curly skills__icon"></i>
@@ -271,7 +267,7 @@
                 </div>
               </div>
             </div>
-            <!--BACKEND -->
+    
             <div class="skills__content skills__close">
               <header class="skills__header">
                 <i class="uil uil-server-network skills__icon"></i>
@@ -324,7 +320,7 @@
                 </div>
               </div>
             </div>
-            <!--OTHER TECHNOLOGIES-->
+         
             <div class="skills__content skills__close">
               <header class="skills__header">
                 <i class="uil uil-server-network skills__icon"></i>
@@ -371,12 +367,13 @@
         </div>
       </section>
 
-      <!-- QUALIFICATION -->
+       
       <section class="qualification section">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
 
-        <!-- <div class="qualification__container container">
+   
+          <div class="qualification__container container">
           <div class="qualification__tabs">
             <div class="qualification__button button--flex">
               <i class="uil uil-graduation-cap qualification__icon"></i>
@@ -408,15 +405,15 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div> 
       </section>
 
-      <!-- PORTFOLIO -->
+    
       <section class="portfolio section" id="portfolio">
         <h2 class="section__title">My projects</h2>
         <span class="section__subtitle">Outstanding projects</span>
 
-        <!-- PORTFOLIO CONTENT -->
+         PORTFOLIO CONTENT
         <div class="portfolio__container container">
           <div class="">
             <article class="portfolio__content grid">
@@ -427,7 +424,7 @@
               />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">DevChallenges Paths</h3>
-                <!-- 
+ 
                 <p class="portfolio__description">Description</p>
                 <a
                   href="#"
@@ -436,25 +433,25 @@
                   Demo
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
-              --></div>
+              </div>
             </article>
           </div>
-          <!-- ARROWS -->
-          <!-- 
+     
+
             <button class="swiper-button-prev">
             <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
           </button>
           <button class="swiper-button-next">
             <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
           </button>
-          -->
-          <!-- PAGINATION -->
+  
+  
 
-          <!-- <div class="swiper-pagination"></div>  -->
+       <div class="swiper-pagination"></div>  
         </div>
       </section>
 
-      <!-- CONTACT -->
+    
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
@@ -480,7 +477,7 @@
           </div>
         </div>
       </section>
-    </main>
+    --></main>
 
     <!--  SWIPER JS -->
     <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->

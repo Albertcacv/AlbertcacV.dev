@@ -14,6 +14,8 @@ if (navClose) {
   })
 }
 
+
+
 // Remove menu mobile
 navMenu.addEventListener('click', (e) => {
   if (e.target.className == 'nav__link') navMenu.classList.remove('show-menu')

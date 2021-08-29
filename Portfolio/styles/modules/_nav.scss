@@ -58,19 +58,19 @@
       color: var(--first-color-alt);
     }
   }
-}
 
-/* show menu */
-.show-menu {
-  bottom: 0;
-}
+  /* show menu */
+  .show-menu {
+    bottom: 0;
+  }
 
-/* Active link */
-.active-link {
-  color: var(--first-color);
-}
+  // /* Active link */
+  .active-link {
+    color: var(--first-color);
+  }
 
-/* change background header */
-.scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.274);
+  // /* change background header */
+  .scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.274);
+  }
 }
