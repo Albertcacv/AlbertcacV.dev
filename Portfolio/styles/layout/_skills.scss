@@ -13,7 +13,7 @@
   &__icon,
   &__arrow {
     font-size: 2rem;
-    color: $first-color;
+    color: var(--first-color);
   }
 
   &__icon {
@@ -26,7 +26,7 @@
 
   &__subtitle {
     font-size: $small-font-size;
-    color: $text-color-light;
+    color: var(--text-color-light);
   }
 
   &__arrow {
@@ -46,23 +46,21 @@
   }
 
   &__list {
-      row-gap: 1.5rem;
-      padding-left: 2.7rem;
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
   }
 }
 
-.skills__close .skills__list{
-    height: 0;
-    overflow: hidden;
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
 }
 
-.skills__open .skills__list{
-    height: max-content;
-    margin-bottom: $mb-2-5;
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: $mb-2-5;
 }
 
-
-.skills__open .skills__arrow{
-    transform: rotate(-180deg);
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
 }
-

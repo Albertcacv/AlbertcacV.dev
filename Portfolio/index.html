@@ -16,20 +16,15 @@
     />
 
     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    /> -->
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="assets/css/main.css" />
 
-    <!-- MAIN JS-->
-    <script defer src="assets/js/main.js"></script>
-
-    <!-- SWIPER JS -->
-    <script defer src="assets/js/swiper-bundle.min.js"></script>
-
     <!-- FAVICON-->
-
     <link
       rel="shortcut icon"
       href="assets/images/favicon.ico"
@@ -46,7 +41,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a class="nav__link" href="#home">
+              <a class="nav__link active-link" href="#home">
                 <i class="uil uil-estate nav__icon"></i> Home
               </a>
             </li>
@@ -61,7 +56,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#projects">
+              <a class="nav__link" href="#portfolio">
                 <i class="uil uil-monitor nav__icon"></i> Projects
               </a>
             </li>
@@ -78,7 +73,9 @@
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
-        <div class="nav__btns">
+        <div class="nav__buttons">
+          <!-- THEME CHANGE BUTTON -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps nav__icon"></i>
           </div>
@@ -87,6 +84,7 @@
     </header>
 
     <main class="main">
+      <!-- HOME -->
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
@@ -173,11 +171,13 @@
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
+          <img src="assets/images/logo.jpg" alt="" class="about__img" />
           <div class="about__data">
             <p class="about__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -197,6 +197,7 @@
         </div>
       </section>
 
+      <!-- SKILLS -->
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">Technological stack</span>
@@ -370,6 +371,7 @@
         </div>
       </section>
 
+      <!-- QUALIFICATION -->
       <section class="qualification section">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
@@ -414,9 +416,10 @@
         <h2 class="section__title">My projects</h2>
         <span class="section__subtitle">Outstanding projects</span>
 
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <div class="portfolio__content grid swiper-slide">
+        <!-- PORTFOLIO CONTENT -->
+        <div class="portfolio__container container">
+          <div class="">
+            <article class="portfolio__content grid">
               <img
                 class="portfolio__img"
                 src="assets/images/devChallenge.png"
@@ -424,6 +427,7 @@
               />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">DevChallenges Paths</h3>
+                <!-- 
                 <p class="portfolio__description">Description</p>
                 <a
                   href="#"
@@ -432,19 +436,21 @@
                   Demo
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
-              </div>
-            </div>
+              --></div>
+            </article>
           </div>
           <!-- ARROWS -->
-          <div class="swiper-button-next">
+          <!-- 
+            <button class="swiper-button-prev">
             <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
+          </button>
+          <button class="swiper-button-next">
             <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-
+          </button>
+          -->
           <!-- PAGINATION -->
-          <div class="swiper-pagination"></div>
+
+          <!-- <div class="swiper-pagination"></div>  -->
         </div>
       </section>
 
@@ -475,5 +481,11 @@
         </div>
       </section>
     </main>
+
+    <!--  SWIPER JS -->
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+
+    <!-- MAIN JS-->
+    <script aysnc src="assets/js/main.js"></script>
   </body>
 </html>

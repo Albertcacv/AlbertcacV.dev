@@ -27,14 +27,14 @@
   }
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '';
-}
+// .swiper-button-prev::after,
+// .swiper-button-next::after {
+//   content: '';
+// }
 
 .swiper-portfolio-icon {
   font-size: 2rem;
-  color: $first-color;
+  color: var(--first-color);
 }
 
 .swiper-button-prev {
@@ -45,17 +45,16 @@
   right: -0.5rem;
 }
 
-
 .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: -2.5rem;
+  bottom: -2.5rem;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: $first-color;
+  background-color: var(--first-color);
 }
 
 .swiper-button-prev,
 .swiper-button-next,
 .swiper-pagination-bullet {
-    outline: none;
+  outline: none;
 }

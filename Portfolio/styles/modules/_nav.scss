@@ -7,12 +7,12 @@
 
   &__logo,
   &__toggle {
-    color: $title-color;
+    color: var(--title-color);
     font-weight: $font-medium;
   }
 
   &__logo:hover {
-    color: $first-color;
+    color: var(--first-color);
   }
 
   &__toggle {
@@ -20,7 +20,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $first-color;
+      color: var(--first-color);
     }
   }
 
@@ -34,11 +34,11 @@
     flex-direction: column;
     align-items: center;
     font-size: $small-font-size;
-    color: $title-color;
+    color: var(--title-color);
     font-weight: $font-medium;
 
     &:hover {
-      color: $first-color;
+      color: var(--first-color);
     }
   }
 
@@ -52,11 +52,10 @@
     bottom: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: $first-color;
+    color: var(--first-color);
 
     &:hover {
-      color: $first-color-alt;
-
+      color: var(--first-color-alt);
     }
   }
 }
@@ -64,4 +63,14 @@
 /* show menu */
 .show-menu {
   bottom: 0;
+}
+
+/* Active link */
+.active-link {
+  color: var(--first-color);
+}
+
+/* change background header */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.274);
 }

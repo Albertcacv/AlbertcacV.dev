@@ -2,7 +2,6 @@
 @import 'base/variables';
 @import 'base/base';
 @import 'base/reset';
-@import 'base/media';
 
 //layout files
 @import 'layout/layout';
@@ -16,3 +15,6 @@
 //modules files
 @import 'modules/nav';
 @import 'modules/buttons';
+
+//media queries
+@import 'base/media';

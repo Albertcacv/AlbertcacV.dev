@@ -11,7 +11,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $first-color;
+      color: var(--first-color);
     }
   }
 
@@ -39,14 +39,14 @@
 
   &__calendar {
     font-size: $smaller-font-size;
-    color: $text-color-light;
+    color: var(--text-color-light);
   }
 
   &__rounder {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: $first-color;
+    background-color: var(--first-color);
     border-radius: 50%;
   }
 
@@ -54,8 +54,7 @@
     display: block;
     width: 1px;
     height: 100%;
-    background-color: $first-color;
+    background-color: var(--first-color);
     transform: translate(6px, -7px);
-
   }
 }
