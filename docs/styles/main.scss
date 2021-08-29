@@ -1,0 +1,21 @@
+//base files
+@import 'base/variables';
+@import 'base/base';
+@import 'base/reset';
+
+//layout files
+@import 'layout/layout';
+@import 'layout/home';
+@import 'layout/about';
+@import 'layout/skills';
+@import 'layout/qualifications';
+@import 'layout/portfolio';
+@import 'layout/contact';
+
+//modules files
+@import 'modules/nav';
+@import 'modules/card';
+@import 'modules/buttons';
+
+//media queries
+@import 'base/media';
