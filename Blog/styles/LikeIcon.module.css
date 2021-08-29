@@ -1,9 +1,0 @@
-.likes {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.likes__number {
-    margin-left: 2px;
-}
