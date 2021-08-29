@@ -5,7 +5,7 @@
     margin-bottom: $mb-2;
   }
 
-  &__buttons {
+  &__button {
     font-size: $h3-font-size;
     font-weight: $font-medium;
     cursor: pointer;
@@ -55,6 +55,22 @@
     width: 1px;
     height: 100%;
     background-color: var(--first-color);
-    transform: translate(6px, -7px);
+    transform: translate(6px);
   }
+
+  & [data-content] {
+    display: none;
+  }
+
+  &__active[data-content] {
+    display: block;
+  }
+
+  &__button.qualification__active {
+    color: var(--first-color);
+  }
+}
+
+.empty {
+  text-align: center;
 }

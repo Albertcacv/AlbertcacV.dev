@@ -1,4 +1,5 @@
 .portfolio {
+  margin-bottom: $mb-2-5;
   &__container {
     overflow: initial;
   }
@@ -7,8 +8,12 @@
     padding: 0 1.5rem;
   }
 
+  &__data {
+    margin-bottom: $mb-1-5;
+  }
+
   &__img {
-    width: 265px;
+    width: 100%;
     border-radius: 0.5rem;
     justify-self: center;
   }
@@ -19,18 +24,24 @@
   }
 
   &__description {
-    margin-bottom: $mb-0-75;
-
+    margin-bottom: $mb-1-5;
     &:hover .button__icon {
       transform: translateX(0.25rem);
     }
   }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-// .swiper-button-prev::after,
-// .swiper-button-next::after {
-//   content: '';
-// }
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
 
 .swiper-portfolio-icon {
   font-size: 2rem;

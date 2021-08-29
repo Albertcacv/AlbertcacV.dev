@@ -12,6 +12,11 @@
   }
 }
 
+@media screen and(min-width: 450px) {
+  .flip-card {
+    height: 370px;
+  }
+}
 @media screen and (min-width: 968px) {
   $big-font-size: 3rem;
   $h1-font-size: 2.25rem;
@@ -53,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 483px) {
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -78,6 +83,9 @@
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
+  }
+  .flip-card {
+    height: 470px;
   }
 }
 
@@ -122,6 +130,7 @@
     &__list {
       display: flex;
       column-gap: 2rem;
+      margin-left: 2rem;
     }
 
     &__menu {
