@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Albertcacv | desarrollo web, software y ciberseguridad"
+    />
+
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- FAVICON-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>AlbertcacV</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">AlbertcacV</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a class="nav__link active-link" href="#home">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#skills">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#portfolio">
+                <i class="uil uil-monitor nav__icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="https://albertcacv.vercel.app/">
+                <i class="uil uil-document-layout-center nav__icon"></i> Blog
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__buttons">
+          <!-- THEME CHANGE BUTTON -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <!-- TOGGLE BUTTON -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps nav__icon"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--================== HOME ===========================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/alberto-ca%C3%B1o-%C3%A1lvarez/"
+                class="home__social-icon"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://twitter.com/AlbertcacV"
+                class="home__social-icon"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="uil uil-twitter-alt"></i>
+              </a>
+              <a
+                href="https://github.com/Albertcacv"
+                target="_blank"
+                class="home__social-icon"
+                rel="noopener"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <img class="home__blob-img" src="assets/images/logo.jpg" alt="" />
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'am Alberto</h1>
+              <h2 class="home__subtitle">Software developer</h2>
+              <p class="home__description">
+                Curious about cybersecurity and currently focused on web
+                development.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/alberto-ca%C3%B1o-%C3%A1lvarez/"
+                target="_blank"
+                class="button button--flex"
+                rel="noopener"
+              >
+                Contact me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="ui uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--================== ABOUT ===========================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="assets/images/about-img.jpg"
+                  alt=""
+                  class="about__img"
+                />
+              </div>
+              <div class="flip-card-back">
+                <img
+                  src="assets/images/about-img.jpg"
+                  alt=""
+                  class="flip-card-back__img"
+                />
+                <h2 class="flip-card-back__text">Alberto Caño Álvarez</h2>
+                <p class="flip-card-back__text">Software Developer</p>
+                <p class="flip-card-back__text">IT Engineer Student</p>
+                <p>
+                  Currently I am dedicated to consolidate and improve my
+                  knowledge in the area of web my knowledge in the area of web
+                  development. In my my free time I like to do research in the
+                  field of cybersecurity, more focused cybersecurity, more
+                  focused on the pentesting sector.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__data">
+            <div class="about__buttons">
+              <a
+                download=""
+                href="assets/pdf/CV.pdf"
+                class="button button--flex"
+              >
+                Download CV <i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================== SKILLS ===========================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">Technological stack</span>
+
+        <div class="skills__container container grid">
+          <div class="skills__content skills__close">
+            <header class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h2 class="skills__title">Frontend development</h2>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </header>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">ReactJS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">VueJS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">NextJS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">GatsbyJS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">SASS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Tailwind</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content skills__close">
+            <header class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+              <div>
+                <h2 class="skills__title">Backend development</h2>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </header>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">NodeJS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">NestJS</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">MongoDB</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">MySQL</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Firebase</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content skills__close">
+            <header class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h2 class="skills__title">Other technologies</h2>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </header>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">TypeScript</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Java</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Go</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================== QUALIFICATION ===========================-->
+      <section class="qualification section">
+        <h2 class="section__title">Experience</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <button
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </button>
+
+            <button
+              class="qualification__button button--flex"
+              data-target="#work"
+            >
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </button>
+          </div>
+
+          <div class="qualification__sections">
+            <!--================== QUALIFICATION CONTENT 1 ===========================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--================== QUALIFICATION 1 ===========================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Engineer</h3>
+                  <span class="qualification__subtitle">León - University</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    <span>2018 - 2023</span>
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__line"></span>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+
+            <!--================== QUALIFICATION CONTENT 2  ===========================-->
+            <div class="qualification__content" data-content id="work">
+              <!--================== QUALIFICATION 1 ===========================-->
+              <h3 class="empty">
+                Be the first <i class="uil uil-hunting"></i>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================== PORTFOLIO ===========================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">My projects</h2>
+        <span class="section__subtitle">Outstanding projects</span>
+
+        <div class="portfolio__container container swiper">
+          <!--PORTFOLIO CONTENT -->
+          <div class="swiper-wrapper">
+            <!-- SLIDE 1 -->
+            <!-- <article class="portfolio__content grid swiper-slide">
+              <img
+                class="portfolio__img"
+                src="assets/images/devChallenge.png"
+                alt=""
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">DevChallenges Paths</h3>
+
+                <p class="portfolio__description">
+                  Small website with all the challenges of the
+                  <a href="https://devchallenges.io/" alt="" target="_blank"
+                    >devChallenges</a
+                  >
+                  website.
+                </p>
+                <footer class="portfolio__buttons">
+                  <a
+                    href="https://github.com/Albertcacv/devchallenges"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button"
+                  >
+                    Code
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+
+                  <a
+                    href="https://albertcacv.github.io/devchallenges/"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button"
+                  >
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </footer>
+              </div>
+            </article> -->
+          </div>
+
+          <button class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </button>
+          <button class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </button>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--================== CONTACT ===========================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <a
+                href="https://www.linkedin.com/in/alberto-ca%C3%B1o-%C3%A1lvarez/"
+                class="home__social-icon"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="uil uil-linkedin contact__icon"></i>
+              </a>
+              <a
+                href="https://twitter.com/AlbertcacV"
+                class="home__social-icon"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="uil uil-twitter contact__icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  SWIPER JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS-->
+    <script aysnc src="assets/js/main.js"></script>
+  </body>
+</html>
