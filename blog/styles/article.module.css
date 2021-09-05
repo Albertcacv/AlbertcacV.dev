@@ -1,0 +1,18 @@
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__icon {
+  font-size: x-large;
+}

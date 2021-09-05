@@ -1,0 +1,54 @@
+.wrapper {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+}
+.sidemenu {
+  position: absolute;
+  background-color: red;
+  color: black;
+  width: 70%;
+  min-height: 100vh;
+}
+
+.sidemenu__header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.btn {
+  position: relative;
+  background-color: red;
+  width: 25px;
+  height: 0;
+  border: 0;
+}
+.btn::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  bottom: -4px;
+  left: -10px;
+  transform: rotate(-45deg);
+  background-color: black;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  top: 2px;
+  left: -10px;
+  transform: rotate(45deg);
+  background-color: black;
+}
