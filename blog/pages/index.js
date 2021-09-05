@@ -23,7 +23,7 @@ export default function Home({ posts }) {
 
       <main className={styles.main}>
         <Header />
-        {/* <Gallery articles={posts} /> */}
+        <Gallery articles={posts} />
       </main>
 
       <footer className={styles.footer}></footer>

@@ -1,3 +1,6 @@
+import Categories from "../Categories"
+import Tags from "../Tags"
+
 import styles from "../../styles/sidemenu.module.css"
 
 export default function SideMenu({ isMenuActive }) {
@@ -7,8 +10,9 @@ export default function SideMenu({ isMenuActive }) {
         <header className={styles.sidemenu__header}>
           <button className={styles.btn}></button>
         </header>
-        <h2>MENU</h2>
-        sfdgdfgdfgdf
+        <h2>AlbertcacV</h2>
+        <Categories />
+        <Tags />
       </aside>
     </div>
   )

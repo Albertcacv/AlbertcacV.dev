@@ -1,4 +1,5 @@
 .article {
+  margin: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,6 +7,7 @@
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
+  box-shadow: 0 2px 3px rgba(128, 128, 128, 0.479);
 }
 
 .article__content {

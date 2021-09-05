@@ -1,0 +1,24 @@
+.tags {
+  width: 100%;
+}
+
+.tags__title {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: gray;
+  text-align: center;
+}
+.tags__content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 7rem));
+  column-gap: 10px;
+}
+
+.tags__item {
+  padding: 2px;
+}
