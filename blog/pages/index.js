@@ -3,9 +3,8 @@ import Head from "next/head"
 import { getAllFilesMetaData } from "../lib/mdx"
 
 import Header from "../components/Header"
-import Categories from "../components/Categories"
 import Gallery from "../components/Gallery"
-import Tags from "../components/Tags"
+
 
 import styles from "../styles/Home.module.css"
 

@@ -1,23 +1,18 @@
-import { useState } from "react"
+import { useEffect, useState } from "react";
 
-import SearchForm from "../SearchForm"
-import HamburgerBtn from "../HamburgerBtn"
-
-import styles from "../../styles/Header.module.css"
-import SideMenu from "../SideMenu"
+import SideMenu from "../SideMenu";
+import DesktopMenu from "../DesktopMenu";
 
 export default function Header() {
-  let [menuActive, setMenuctive] = useState(false)
+  const [dimension, setDimension] = useState(0);
 
-  const showMenu = (isActive) => {
-    setMenuctive(() => (menuActive = isActive))
-  }
+  useEffect(() => {
+    function handleResize() {
+      setDimension(() => window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
 
-  return (
-    <header className={styles.header}>
-      {menuActive && <SideMenu isMenuActive={showMenu} />}
-      <HamburgerBtn isMenuActive={showMenu} />
-      <SearchForm />
-    </header>
-  )
+  return <>{dimension < 768 ? <SideMenu /> : <DesktopMenu />}</>;
+
 }

@@ -1,25 +1,22 @@
-import { GoSearch } from "react-icons/go"
+import { useState } from "react";
 
-import { useState } from "react"
-
-import styles from "../../styles/searchForm.module.css"
+import styles from "../../styles/searchForm.module.css";
 
 export default function SearchForm() {
-  let [isSearch, showSearch] = useState(false)
+  let [isSearch, showSearch] = useState(false);
 
   const showForm = () => {
-   
     if (isSearch) {
-      showSearch(() => isSearch = false)
+      showSearch(() => (isSearch = false));
     } else {
-      showSearch(() => isSearch = true)
+      showSearch(() => (isSearch = true));
     }
-  }
+  };
 
   return (
     <div className={styles.search}>
       <button className={styles.search__button} onClick={showForm}>
-        <GoSearch />
+        {/* <GoSearch /> */}
       </button>
       {isSearch && (
         <input
@@ -29,5 +26,5 @@ export default function SearchForm() {
         />
       )}
     </div>
-  )
+  );
 }
