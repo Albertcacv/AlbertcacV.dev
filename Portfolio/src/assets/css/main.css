@@ -16,6 +16,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --container-color: #fff;
+  --qualification-button-color: black;
 }
 
 /*========== Font and typography ==========*/
@@ -53,6 +54,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --qualification-button-color: rgba(255, 255, 255, 0.726);
 }
 
 h1,
@@ -643,6 +645,8 @@ template {
   font-size: 1.125rem;
   font-weight: 500;
   cursor: pointer;
+  color: var(--qualification-button-color);
+  background: transparent;
 }
 
 .qualification__button:hover {
@@ -869,7 +873,6 @@ template {
 .flip-card {
   width: 100%;
   height: 270px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
   margin-bottom: 2rem;
@@ -901,7 +904,7 @@ template {
 
 .flip-card-back {
   height: 100%;
-  color: black;
+  color: white;
   transform: rotateY(180deg);
   position: relative;
   display: flex;

@@ -9,6 +9,8 @@
     font-size: $h3-font-size;
     font-weight: $font-medium;
     cursor: pointer;
+    color: var(--qualification-button-color);
+    background: transparent;
 
     &:hover {
       color: var(--first-color);
