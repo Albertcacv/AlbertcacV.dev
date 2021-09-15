@@ -15,7 +15,7 @@ linkedin = "albertcacv"
 location = "Spain"
 twitter = "albertcacv"
 url = "https://albertcacv.dev"
-userStatusEmoji = "💯"
+userStatusEmoji = "✅"
 
 [frontmatter]
 lastmod = ["lastmod", ":fileModTime", ":default"]
