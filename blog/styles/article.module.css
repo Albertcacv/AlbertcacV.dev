@@ -18,3 +18,7 @@
 .article__icon {
   font-size: x-large;
 }
+
+.article__title {
+  font-weight: bold;
+}

@@ -29,11 +29,11 @@ export default function SideMenu() {
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen} size="xs">
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
+          <DrawerHeader borderBottomWidth="1px">AlbertcacV</DrawerHeader>
           <DrawerBody>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
+            <p>Desarrollo Web</p>
+            <p>Cibeseguridad</p>
+            <p>Proyectos Personales</p>
           </DrawerBody>
         </DrawerContent>
       </Drawer>

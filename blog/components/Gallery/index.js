@@ -1,13 +1,12 @@
-import Post from "../Post"
-
-import styles from "../../styles/gallery.module.css"
+import { Grid } from "@chakra-ui/react";
+import Post from "../Post";
 
 export default function Gallery({ articles }) {
   return (
-    <section className={styles.gallery}>
+    <Grid templateColumns="repeat(1, 1fr)" gap={5}>
       {articles.map((article) => (
         <Post key={article.slug} post={article} />
       ))}
-    </section>
-  )
+    </Grid>
+  );
 }
