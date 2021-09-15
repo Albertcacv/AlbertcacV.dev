@@ -79,6 +79,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about__data {
+    display: flex;
+
+  }
+
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.6fr;
@@ -88,7 +93,6 @@
   .swiper-pagination {
     top: 11rem;
   }
-
 }
 
 @media screen and (min-width: 768px) {

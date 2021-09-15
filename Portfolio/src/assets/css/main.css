@@ -573,10 +573,11 @@ template {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  margin-bottom: 2rem;
 }
 
 .about__description-item {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .about__buttons {
@@ -992,6 +993,9 @@ template {
   .portfolio__content,
   .project__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about__data {
+    display: flex;
   }
   .qualification__sections {
     display: grid;
