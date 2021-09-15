@@ -12,11 +12,6 @@
   }
 }
 
-@media screen and(min-width: 450px) {
-  .flip-card {
-    height: 370px;
-  }
-}
 @media screen and (min-width: 968px) {
   $big-font-size: 3rem;
   $h1-font-size: 2.25rem;
@@ -58,6 +53,11 @@
   }
 }
 
+@media screen and (min-width: 420px) {
+  .swiper-pagination {
+    top: 22rem;
+  }
+}
 @media screen and (min-width: 483px) {
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
@@ -79,15 +79,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
-  .flip-card {
-    height: 470px;
+
+  .swiper-pagination {
+    top: 11rem;
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -174,10 +175,6 @@
 
   .about__description {
     text-align: initial;
-  }
-
-  .about__info {
-    justify-content: space-between;
   }
 
   .about__buttons {

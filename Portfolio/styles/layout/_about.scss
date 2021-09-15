@@ -6,12 +6,24 @@
   &__description {
     text-align: center;
     margin-bottom: $mb-2-5;
+  }
+  &__description-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
 
+  &__description-item {
+    margin: 10px 0;
   }
 
   &__buttons {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
+.underline {
+  text-decoration: underline;
+}
