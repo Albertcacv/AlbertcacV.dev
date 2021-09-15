@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>blog.albertcacv.dev/</loc>
+    <loc>/</loc>
     <lastmod>2021-09-15T21:19:02+02:00</lastmod>
   </url>
   
   <url>
-    <loc>blog.albertcacv.dev/post/noob/</loc>
+    <loc>/post/noob/</loc>
     <lastmod>2021-09-15T21:19:02+02:00</lastmod>
   </url>
   
   <url>
-    <loc>blog.albertcacv.dev/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2021-09-15T21:19:02+02:00</lastmod>
   </url>
   
   <url>
-    <loc>blog.albertcacv.dev/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>blog.albertcacv.dev/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

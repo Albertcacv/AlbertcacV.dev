@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Albertcacv | Blog</title>
-    <link>blog.albertcacv.dev/</link>
+    <link>/</link>
     <description>Recent content on Albertcacv | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 04 Sep 2021 19:10:30 +0200</lastBuildDate>
     
-	<atom:link href="blog.albertcacv.dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Noob - HMV</title>
-      <link>blog.albertcacv.dev/post/noob/</link>
+      <link>/post/noob/</link>
       <pubDate>Sat, 04 Sep 2021 19:10:30 +0200</pubDate>
       
-      <guid>blog.albertcacv.dev/post/noob/</guid>
+      <guid>/post/noob/</guid>
       <description>Write up of the HackMyVM platform Noob machine</description>
     </item>
     

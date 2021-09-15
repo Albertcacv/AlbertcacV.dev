@@ -1,4 +1,4 @@
-baseURL = "blog.albertcacv.dev"
+baseURL = ""
 title = "Albertcacv | Blog"
 
 pygmentsCodeFences = true
