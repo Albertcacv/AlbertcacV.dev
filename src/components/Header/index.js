@@ -18,8 +18,6 @@ export default function Header() {
     })
   }
 
-  const windowWidth = 0
-
   const handleDarkThemeClick = () => {
     setTheme(() => !isLight)
   }
@@ -35,10 +33,6 @@ export default function Header() {
       document.body.classList.remove('dark-theme')
     }
   }, [isLight])
-
-  useEffect(() => {
-    windowWidth = window.innerWidth
-  })
 
   return (
     <header className='header' id='header'>
