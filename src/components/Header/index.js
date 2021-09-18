@@ -18,6 +18,7 @@ export default function Header() {
     })
   }
 
+  let windowWidth = 0
   const handleDarkThemeClick = () => {
     setTheme(() => !isLight)
   }
@@ -33,6 +34,13 @@ export default function Header() {
       document.body.classList.remove('dark-theme')
     }
   }, [isLight])
+
+  useEffect(() => {
+    windowWidth = window.innerWidth
+    if (windowWidth >= 768) {
+      setNav(() => true)
+    }
+  }, [])
 
   return (
     <header className='header' id='header'>
