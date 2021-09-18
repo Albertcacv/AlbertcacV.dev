@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    bottom: -100%;
+    bottom: 2.4rem;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
@@ -81,7 +81,6 @@
 
   .about__data {
     display: flex;
-
   }
 
   .qualification__sections {

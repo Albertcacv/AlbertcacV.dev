@@ -19,7 +19,7 @@
 
   &__icon {
     font-size: 1.8rem;
-    margin-right: $mb-0-25;
+    margin-right: $mb-0-5;
   }
 
   &__data {
@@ -42,6 +42,7 @@
   &__calendar {
     font-size: $smaller-font-size;
     color: var(--text-color-light);
+    margin-right: 13px;
   }
 
   &__rounder {
@@ -60,15 +61,7 @@
     transform: translate(6px);
   }
 
-  & [data-content] {
-    display: none;
-  }
-
-  &__active[data-content] {
-    display: block;
-  }
-
-  &__button.qualification__active {
+  &__button:active {
     color: var(--first-color);
   }
 }
