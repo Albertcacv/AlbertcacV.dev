@@ -3,46 +3,48 @@ import * as React from 'react'
 import VenturImg from '../../../images/ventur.png'
 import RickImg from '../../../images/rick&morty.png'
 
-import Swiper from 'swiper'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 import Slide from './Slide'
 
 export default function Slider() {
-  const swiper = new Swiper('.portfolio__container', {
-    cssMode: true,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    mousewheel: true,
-    keyboard: true,
-  })
-
   return (
     <>
-      <div className='swiper-wrapper'>
-        {/* <!-- SLIDE 1 --> */}
-        <Slide
-          img={VenturImg}
-          title='Ventur'
-          description='Replica of a website for the sale of cards inspired by the playfulbet
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        scrollbar={{ draggable: true, hide: true }}
+      >
+        <SwiperSlide>
+          <Slide
+            img={VenturImg}
+            title='Ventur'
+            description='Replica of a website for the sale of cards inspired by the playfulbet
           portal.'
-          codeLink='https://github.com/Albertcacv/e-commerce_model'
-        />
-        {/* <!-- SLIDE 2 --> */}
-        <Slide
-          img={RickImg}
-          title='Rick and Morty API'
-          description=' Api of the characters of the series "Rick and Morty".'
-          codeLink='https://github.com/Albertcacv/RickMorty_Api'
-          demoLink='https://rick-morty-api-m4uxqln8u-albertcacv.vercel.app/'
-        />
+            codeLink='https://github.com/Albertcacv/e-commerce_model'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Slide
+            img={RickImg}
+            title='Rick and Morty API'
+            description=' Api of the characters of the series "Rick and Morty".'
+            codeLink='https://github.com/Albertcacv/RickMorty_Api'
+            demoLink='https://rick-morty-api-m4uxqln8u-albertcacv.vercel.app/'
+          />
+        </SwiperSlide>
+      </Swiper>
+      {/* <div className='swiper-wrapper'>
+        {/* <!-- SLIDE 1 --> 
+
+        {/* <!-- SLIDE 2 --> 
+        
       </div>
 
       <button className='swiper-button-prev'>
@@ -52,7 +54,8 @@ export default function Slider() {
         <i className='uil uil-angle-right-b swiper-portfolio-icon'></i>
       </button>
 
-      <div className='swiper-pagination'></div>
+      <div className='swiper-pagination'></div> 
+      */}
     </>
   )
 }

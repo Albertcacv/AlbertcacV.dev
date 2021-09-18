@@ -18,7 +18,6 @@ export default function Header() {
     })
   }
 
-  let windowWidth = 0
   const handleDarkThemeClick = () => {
     setTheme(() => !isLight)
   }
@@ -36,9 +35,11 @@ export default function Header() {
   }, [isLight])
 
   useEffect(() => {
-    windowWidth = window.innerWidth
+    let windowWidth = window.innerWidth
     if (windowWidth >= 768) {
       setNav(() => true)
+    } else {
+      setNav(() => false)
     }
   }, [])
 
@@ -48,8 +49,8 @@ export default function Header() {
         <span className='nav__logo' onClick={ScrollToTop}>
           AlbertcacV
         </span>
-        {showNav && <Nav />}
         <div className='nav__buttons'>
+          {showNav && <Nav />}
           {/* <!-- THEME CHANGE BUTTON --> */}
           {isLight ? (
             <span onClick={handleDarkThemeClick}>

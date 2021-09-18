@@ -62,7 +62,8 @@
 }
 
 .swiper-pagination {
-  top: 20rem;
+  position: absolute;
+  top: 30rem;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--first-color);
