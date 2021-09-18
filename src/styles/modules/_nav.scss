@@ -9,6 +9,7 @@
   &__toggle {
     color: var(--title-color);
     font-weight: $font-medium;
+    cursor: pointer;
   }
 
   &__logo:hover {
