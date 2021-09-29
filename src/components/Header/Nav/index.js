@@ -1,53 +1,31 @@
 import * as React from 'react'
 
-import UilHome from '@iconscout/react-unicons/icons/uil-home'
-import UilUser from '@iconscout/react-unicons/icons/uil-user'
-import UilFile from '@iconscout/react-unicons/icons/uil-file-alt'
+import { useState, useEffect } from 'react'
+import 'boxicons'
 
-import UilMonitor from '@iconscout/react-unicons/icons/uil-monitor'
-import UilMessage from '@iconscout/react-unicons/icons/uil-message'
-import UilDocument from '@iconscout/react-unicons/icons/uil-document-layout-center'
+import NavItem from './NavItem'
 
-export default function Nav() {
+export default function Nav({ active, action }) {
+
+  const handleCloseClick = () => {
+    action(false)
+  }
+
+  const handleItemClick = (param) => {
+    action(param)
+  }
   return (
-    <div className='nav__menu'>
-      <ul className='nav__list grid'>
-        <li className='nav__item'>
-          <a className='nav__link' href='#home'>
-            <UilHome className='nav__icon' />
-            Home
-          </a>
-        </li>
-        <li className='nav__item'>
-          <a className='nav__link' href='#about'>
-            <UilUser className='nav__icon' />
-            About
-          </a>
-        </li>
-        <li className='nav__item'>
-          <a className='nav__link' href='#skills'>
-            <UilFile className='nav__icon' />
-            Skills
-          </a>
-        </li>
-        <li className='nav__item'>
-          <a className='nav__link' href='#portfolio'>
-            <UilMonitor className='nav__icon' />
-            Projects
-          </a>
-        </li>
-        <li className='nav__item'>
-          <a className='nav__link' href='#contact'>
-            <UilMessage className='nav__icon' />
-            Contact
-          </a>
-        </li>
-        <li className='nav__item'>
-          <a className='nav__link' href='/blog'>
-            <UilDocument className='nav__icon' />
-            Blog
-          </a>
-        </li>
+    <div className={active ? 'nav__menu show' : 'nav__menu'} id='nav-menu'>
+      <div className='nav__close' id='nav-close' onClick={handleCloseClick}>
+        <box-icon name='x'></box-icon>
+      </div>
+
+      <ul className='nav__list'>
+        <NavItem title='Home' action={handleItemClick} />
+        <NavItem title='About' action={handleItemClick} />
+        <NavItem title='Skills' action={handleItemClick} />
+        <NavItem title='Works' action={handleItemClick} />
+        <NavItem title='Contact' action={handleItemClick} />
       </ul>
     </div>
   )
