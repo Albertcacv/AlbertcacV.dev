@@ -1,12 +1,12 @@
 .skills {
   &__container {
-    row-gap: 0;
+    padding: 2rem;
   }
 
   &__header {
     display: flex;
     align-items: center;
-    margin-bottom: $mb-2-5;
+    margin-bottom: var(--mb-5);
     cursor: pointer;
   }
 
@@ -17,15 +17,15 @@
   }
 
   &__icon {
-    margin-right: $mb-0-75;
+    margin-right: 0.75rem;
   }
 
   &__title {
-    font-size: $h3-font-size;
+    font-size: var(--h3-font-size);
   }
 
   &__subtitle {
-    font-size: $small-font-size;
+    font-size: var(--small-font-size);
     color: var(--text-color-light);
   }
 
@@ -37,12 +37,12 @@
   &__titles {
     display: flex;
     justify-content: space-between;
-    margin-bottom: $mb-0-5;
+    margin-bottom: var(--mb-1);
   }
 
   &__name {
-    font-size: $normal-font-size;
-    font-weight: $font-medium;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
     font-weight: bold;
   }
 
@@ -55,7 +55,7 @@
 
 .skills__open .skills__list {
   height: max-content;
-  margin-bottom: $mb-2-5;
+  margin-bottom: var(--mb-5);
 }
 
 .skills__open .skills__arrow {
