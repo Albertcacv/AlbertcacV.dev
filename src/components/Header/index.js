@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import 'boxicons'
 
@@ -16,6 +16,15 @@ export default function Header() {
   const handleClicksChildren = (param) => {
     setActive(param)
   }
+
+  useEffect(() => {
+    let windowWidth = window.innerWidth
+    if (windowWidth >= 1024) {
+      setActive(() => true)
+    } else {
+      setActive(() => false)
+    }
+  }, [])
   return (
     <header className='header'>
       <nav className='nav bd-grid'>
@@ -25,11 +34,11 @@ export default function Header() {
 
         <div>
           <a href='#' className='nav__logo'>
-            Albert
+            Alberto
           </a>
         </div>
 
-        {isActive && <Nav active={isActive} action={handleClicksChildren}/>}
+        {isActive && <Nav active={isActive} action={handleClicksChildren} />}
       </nav>
     </header>
   )

@@ -9,6 +9,7 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 import '../styles/main.scss'
 
@@ -26,6 +27,7 @@ const IndexPage = () => {
       <Skills />
       <Portfolio />
       <Contact />
+      <Footer />
     </main>
   )
 }

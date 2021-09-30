@@ -2,7 +2,7 @@ import * as React from 'react'
 import 'boxicons'
 
 import profilePic from '../../images/aboutImg.jpg'
-
+import resume from '../../images/resume.pdf'
 export default function Home() {
   return (
     <section className='home' id='home'>
@@ -22,7 +22,7 @@ export default function Home() {
               target='_blank'
               rel='noopener'
             >
-              <box-icon type='logo' name='linkedin'></box-icon>
+              <box-icon type='logo' name='linkedin' color='#FFF'></box-icon>
             </a>
             <a
               href='https://twitter.com/AlbertcacV'
@@ -30,7 +30,7 @@ export default function Home() {
               target='_blank'
               rel='noopener'
             >
-              <box-icon type='logo' name='twitter'></box-icon>
+              <box-icon type='logo' name='twitter' color='#FFF'></box-icon>
             </a>
             <a
               href='https://github.com/Albertcacv'
@@ -38,11 +38,11 @@ export default function Home() {
               className='home__social-link'
               rel='noopener'
             >
-              <box-icon type='logo' name='github'></box-icon>
+              <box-icon type='logo' name='github' color='#FFF'></box-icon>
             </a>
           </div>
 
-          <a download='' href='#' className='button home__button'>
+          <a download={resume} href='#' className='button home__button'>
             Download Resume
           </a>
         </div>
