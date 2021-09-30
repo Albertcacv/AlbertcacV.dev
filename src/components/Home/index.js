@@ -46,40 +46,6 @@ export default function Home() {
             Download Resume
           </a>
         </div>
-
-        {/* 
-
-          <div className='home__img'>
-            <img className='home__blob-img' src={HomePicture} alt='' />
-          </div>
-
-          <div className='home__data'>
-            <h1 className='home__title'>Hi, I'am Alberto!</h1>
-            <h2 className='home__subtitle'>Software developer</h2>
-            <p className='home__description'>
-              Curious about cybersecurity and currently focused on web
-              development.
-            </p>
-            <a
-              href='https://www.linkedin.com/in/alberto-ca%C3%B1o-%C3%A1lvarez/'
-              target='_blank'
-              className='button button--flex'
-              rel='noopener'
-            >
-              <UilMessage className='button__icon' />
-              Contact me
-            </a>
-          </div>
-        </div>
-
-        <div className='home__scroll'>
-          <a href='#about' className='home__scroll-button button--flex'>
-            <UilMouse className='home__scroll-mouse' />
-            <span className='home__scroll-name'>Scroll down</span>
-            <UilArrowDown className='home__scroll-arrow' />
-          </a>
-        </div>
-      */}
       </div>
     </section>
   )

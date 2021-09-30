@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { useState } from 'react'
+import 'boxicons' 
 
 import UilGraduationCap from '@iconscout/react-unicons/icons/uil-graduation-hat'
 import UilBriefcase from '@iconscout/react-unicons/icons/uil-briefcase-alt'
