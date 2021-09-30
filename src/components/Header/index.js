@@ -2,6 +2,8 @@ import * as React from 'react'
 
 import { useState, useEffect } from 'react'
 
+import { CSSTransition } from 'react-transition-group'
+
 import 'boxicons'
 
 import Nav from './Nav'
@@ -39,7 +41,9 @@ export default function Header() {
           </a>
         </div>
 
-        {isActive && <Nav active={isActive} action={handleClicksChildren} />}
+        <CSSTransition in={isActive} timeout={300}>
+          <Nav active={isActive} action={handleClicksChildren} />
+        </CSSTransition>
       </nav>
     </header>
   )
