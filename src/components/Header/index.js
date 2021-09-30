@@ -19,14 +19,14 @@ export default function Header() {
     setActive(param)
   }
 
-  useEffect(() => {
-    let windowWidth = window.innerWidth
-    if (windowWidth >= 1024) {
-      setActive(() => true)
-    } else {
-      setActive(() => false)
-    }
-  }, [])
+  // useEffect(() => {
+  //   let windowWidth = window.innerWidth
+  //   if (windowWidth >= 1024) {
+  //     setActive(() => true)
+  //   } else {
+  //     setActive(() => false)
+  //   }
+  // }, [])
 
   return (
     <header className='header'>

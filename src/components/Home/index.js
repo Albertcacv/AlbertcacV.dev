@@ -20,7 +20,7 @@ export default function Home() {
               href='https://www.linkedin.com/in/albertcacv/'
               className='home__social-link'
               target='_blank'
-              rel='noopener'
+              rel='noopener noreferrer'
             >
               <box-icon type='logo' name='linkedin' color='#FFF'></box-icon>
             </a>
@@ -28,7 +28,7 @@ export default function Home() {
               href='https://twitter.com/AlbertcacV'
               className='home__social-link'
               target='_blank'
-              rel='noopener'
+              rel='noopener noreferrer'
             >
               <box-icon type='logo' name='twitter' color='#FFF'></box-icon>
             </a>
@@ -36,15 +36,15 @@ export default function Home() {
               href='https://github.com/Albertcacv'
               target='_blank'
               className='home__social-link'
-              rel='noopener'
+              rel='noopener noreferrer'
             >
               <box-icon type='logo' name='github' color='#FFF'></box-icon>
             </a>
           </div>
 
-          <a download={resume} href='#' className='button home__button'>
+          <button download={resume}  className='button home__button'>
             Download Resume
-          </a>
+          </button>
         </div>
       </div>
     </section>

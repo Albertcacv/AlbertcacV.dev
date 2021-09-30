@@ -1,8 +1,5 @@
 import * as React from 'react'
 
-import UilTwitter from '@iconscout/react-unicons/icons/uil-twitter'
-import UilLinkedin from '@iconscout/react-unicons/icons/uil-linkedin'
-
 export default function Contact() {
   return (
     <section className='contact section' id='contact'>
@@ -16,7 +13,7 @@ export default function Contact() {
               href='https://www.linkedin.com/in/alberto-ca%C3%B1o-%C3%A1lvarez/'
               className='button contact__link'
               target='_blank'
-              rel='noopener'
+              rel='noopener noreferrer'
             >
               Send me a message on Linkedin{' '}
             </a>
@@ -24,7 +21,7 @@ export default function Contact() {
               href='https://twitter.com/AlbertcacV'
               className='button contact__link'
               target='_blank'
-              rel='noopener'
+              rel='noopener noreferrer'
             >
               Send me a message on Twitter
             </a>
