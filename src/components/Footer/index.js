@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import 'boxicons' 
+
 export default function Footer() {
   return (
     <footer className='footer'>
