@@ -24,11 +24,8 @@ const IndexPage = () => {
       <Home />
       <About />
       <Skills />
-
-      {/* 
       <Portfolio />
-      <Contact /> 
-      */}
+      <Contact />
     </main>
   )
 }

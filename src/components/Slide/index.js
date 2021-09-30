@@ -4,7 +4,7 @@ import UilArrowRigth from '@iconscout/react-unicons/icons/uil-arrow-right'
 
 export default function Slide({ img, title, description, codeLink, demoLink }) {
   return (
-    <article className='portfolio__content grid swiper-slide'>
+    <article className='portfolio__content'>
       <img className='portfolio__img' src={img} alt='' />
       <div className='portfolio__data'>
         <h3 className='portfolio__title'>{title}</h3>
