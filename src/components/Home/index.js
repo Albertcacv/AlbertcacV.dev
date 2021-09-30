@@ -1,44 +1,53 @@
 import * as React from 'react'
+import 'boxicons'
 
-import HomePicture from '../../images/logo.jpg'
-import UilLinkedin from '@iconscout/react-unicons/icons/uil-linkedin-alt'
-import UilTwitter from '@iconscout/react-unicons/icons/uil-twitter-alt'
-import UilGithub from '@iconscout/react-unicons/icons/uil-github-alt'
-import UilMessage from '@iconscout/react-unicons/icons/uil-message'
-import UilMouse from '@iconscout/react-unicons/icons/uil-mouse-alt'
-import UilArrowDown from '@iconscout/react-unicons/icons/uil-arrow-down'
+import profilePic from '../../images/aboutImg.jpg'
 
 export default function Home() {
   return (
-    <section className='home section' id='home'>
-      <div className='home__container container grid'>
-        <div className='home__content grid'>
+    <section className='home' id='home'>
+      <div className='home__container bd-grid'>
+        <div className='home__data'>
+          <div className='home__img'>
+            <img src={profilePic} alt='' />
+          </div>
+
+          <h1 className='home__title'>Alberto Caño</h1>
+          <span className='home__profession'>Software Developer</span>
+
           <div className='home__social'>
             <a
               href='https://www.linkedin.com/in/albertcacv/'
-              className='home__social-icon'
+              className='home__social-link'
               target='_blank'
               rel='noopener'
             >
-              <UilLinkedin />
+              <box-icon type='logo' name='linkedin'></box-icon>
             </a>
             <a
               href='https://twitter.com/AlbertcacV'
-              className='home__social-icon'
+              className='home__social-link'
               target='_blank'
               rel='noopener'
             >
-              <UilTwitter />
+              <box-icon type='logo' name='twitter'></box-icon>
             </a>
             <a
               href='https://github.com/Albertcacv'
               target='_blank'
-              className='home__social-icon'
+              className='home__social-link'
               rel='noopener'
             >
-              <UilGithub />
+              <box-icon type='logo' name='github'></box-icon>
             </a>
           </div>
+
+          <a download='' href='#' className='button home__button'>
+            Download Resume
+          </a>
+        </div>
+
+        {/* 
 
           <div className='home__img'>
             <img className='home__blob-img' src={HomePicture} alt='' />
@@ -70,6 +79,7 @@ export default function Home() {
             <UilArrowDown className='home__scroll-arrow' />
           </a>
         </div>
+      */}
       </div>
     </section>
   )

@@ -22,12 +22,15 @@ const IndexPage = () => {
       </Helmet>
 
       <Header />
-      {/* <Home />
+      <Home />
+
+      {/* 
       <About />
       <Skills />
       <Qualification />
       <Portfolio />
-      <Contact /> */}
+      <Contact /> 
+      */}
     </main>
   )
 }

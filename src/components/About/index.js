@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import AboutImg from '../../images/about-img.jpg'
+// import AboutImg from '../../images/about-img.jpg'
 
 import UilDownload from '@iconscout/react-unicons/icons/uil-download-alt'
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
       <span className='section__subtitle'>My introduction</span>
 
       <div className='about__container container grid'>
-        <img src={AboutImg} alt='' className='about__img' />
+        {/* <img src={AboutImg} alt='' className='about__img' /> */}
         <div className='about__data'>
           <div className='about__description'>
             <div className='about__description-content'>
