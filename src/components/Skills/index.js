@@ -19,7 +19,7 @@ export default function Skills() {
       <h2 className='section__title'>Qualification</h2>
       <span className='section__subtitle'>Technological stack</span>
 
-      <div className='skills__container container grid'>
+      <div className='skills__container bd-grid'>
         <SkillTab type='Frontend Development' tools={frontend} />
         <SkillTab type='Backend Development' tools={backend} />
         <SkillTab type='Other technologies' tools={others} />

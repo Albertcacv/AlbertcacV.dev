@@ -22,7 +22,7 @@ export default function Qualification() {
       <h2 className='section__title'>Experience</h2>
       <span className='section__subtitle'>My personal journey</span>
 
-      <div className='qualification__container container'>
+      <div className='qualification__container'>
         <div className='qualification__tabs'>
           <button
             className='qualification__button button--flex'
