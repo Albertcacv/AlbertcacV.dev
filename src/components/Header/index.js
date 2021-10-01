@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import { CSSTransition } from 'react-transition-group'
 
@@ -18,15 +18,6 @@ export default function Header() {
   const handleClicksChildren = (param) => {
     setActive(param)
   }
-
-  // useEffect(() => {
-  //   let windowWidth = window.innerWidth
-  //   if (windowWidth >= 1024) {
-  //     setActive(() => true)
-  //   } else {
-  //     setActive(() => false)
-  //   }
-  // }, [])
 
   return (
     <header className='header'>
