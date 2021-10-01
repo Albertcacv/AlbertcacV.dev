@@ -42,7 +42,7 @@ export default function Home() {
             </a>
           </div>
 
-          <button download={resume}  className='button home__button'>
+          <button download={resume} className='button home__button'>
             Download Resume
           </button>
         </div>

@@ -1,6 +1,5 @@
 import * as React from 'react'
 
-
 import 'boxicons'
 
 import NavItem from './NavItem'

@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import 'boxicons' 
+import 'boxicons'
 
 export default function Footer() {
   return (
