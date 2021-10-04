@@ -1,8 +1,7 @@
 import * as React from 'react'
 import 'boxicons'
-
-import profilePic from '../../images/aboutImg.jpg'
 import resume from '../../images/resume.pdf'
+import profilePic from '../../images/aboutImg.jpg'
 export default function Home() {
   return (
     <section className='home' id='home'>
@@ -42,9 +41,9 @@ export default function Home() {
             </a>
           </div>
 
-          <button download={resume} className='button home__button'>
+          <a download="" href={resume} className='button home__button'>
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
     </section>
