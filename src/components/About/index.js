@@ -3,8 +3,8 @@ import Qualification from '../Qualification'
 export default function About() {
   return (
     <section className='about section' id='about'>
-      <span className='section__subtitle'>My introduction</span>
       <h2 className='section__title'>About Me</h2>
+      <span className='section__subtitle'>My introduction</span>
 
       <div className='about__container bd-grid'>
         <div className='about__data'>

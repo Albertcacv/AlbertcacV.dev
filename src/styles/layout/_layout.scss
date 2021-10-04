@@ -24,7 +24,7 @@
   &__title {
     font-size: var(--h1-font-size);
     color: var(--first-color);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-2);
     text-align: center;
   }
 
@@ -39,16 +39,14 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--scroll-bar-color);
+  width: 0.5rem;
+
+  background-color: white;
   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-color);
   border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.322);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-color-light);
-}

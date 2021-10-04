@@ -8,8 +8,8 @@ import RickImg from '../../images/rick&morty.png'
 export default function Portfolio() {
   return (
     <section className='portfolio section' id='portfolio'>
-      <span className='section__subtitle'>Outstanding projects</span>
       <h2 className='section__title'>My projects</h2>
+      <span className='section__subtitle'>Outstanding projects</span>
 
       <div className='portfolio__container bd-grid'>
         {/* <!--PORTFOLIO CONTENT --> */}

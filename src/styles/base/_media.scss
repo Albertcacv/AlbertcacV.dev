@@ -71,7 +71,7 @@
   }
 
   .home__container {
-    height: 100v;
+    height: 100vh;
   }
 
   .section {
@@ -81,5 +81,9 @@
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .footer__container{
+    width: 100%;
   }
 }
