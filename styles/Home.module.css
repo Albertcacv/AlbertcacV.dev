@@ -1,0 +1,142 @@
+.container {
+  padding: 0 1rem;
+}
+
+.main {
+  padding: 4rem 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.heroInner {
+  width: 100%;
+  display: flex;
+}
+
+.heroTitle {
+  margin-bottom: 0;
+}
+.heroImage {
+  clip-path: circle(50% at 50% 50%);
+}
+.heroDescription {
+  color: gray;
+}
+
+.heroAside {
+  width: 5rem;
+  min-height: 100%;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer a {
+  margin-left: 0.3rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.timeline {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.title,
+.subtitle {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  position: relative;
+}
+
+.item {
+  padding: 0.3rem;
+  background-color: rgb(238, 238, 224);
+}
+
+.itemTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.itemSubtitle {
+  font-size: 1.2rem;
+}
+.itemCalendar {
+  margin-right: 13px;
+}
+
+.line {
+  display: block;
+  width: 4px;
+  height: 85%;
+  border-radius: 20px;
+  background-color: #aaa3a3;
+  transform: translate(6px, 6px);
+}
+
+.rounder {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #8b8585;
+  border-radius: 50%;
+  position: absolute;
+  top: 58px;
+  left: 11rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
