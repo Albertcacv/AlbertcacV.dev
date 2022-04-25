@@ -1,0 +1,38 @@
+.title,
+.subtitle {
+  margin: 0;
+}
+
+.img,
+.description,
+.social {
+  margin: 2rem 0;
+}
+.img {
+  margin: 2rem 0;
+  border: 1px solid #5671a6;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.title {
+  background: linear-gradient(to right, #5671a6, #b2cad8);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.description {
+  width: 200px;
+}
+
+.social {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.socialItem {
+  list-style: none;
+  cursor: pointer;
+}
