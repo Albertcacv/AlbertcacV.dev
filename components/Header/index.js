@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import { SHeader } from '../../UI/SHeader'
 import { SNavbar } from '../../UI/SNavbar'
+import ThemeSwitcher from '../ThemeSwitcher/index,'
 import styles from './header.module.css'
+
 const Header = () => {
+  // const { theme, toggleTheme } = useContext(ThemeContext)
+
   return (
     <SHeader>
       <h1>AlbertcacV</h1>
@@ -29,7 +33,9 @@ const Header = () => {
               <a>BLOG</a>
             </Link>
           </li>
-          <li>theme-toggle</li>
+          <li>
+            <ThemeSwitcher />
+          </li>
         </ul>
       </SNavbar>
     </SHeader>

@@ -10,8 +10,6 @@ export const SLayout = styled.div`
     'header header .'
     'profile content .';
   /* background-image: url('background-wallpaper.jpg'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.color};
 `
