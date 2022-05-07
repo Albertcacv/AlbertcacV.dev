@@ -1,14 +1,14 @@
+import { ThemeProvider } from 'next-themes'
 import Layout from '../components/Layout'
-import { ThemeContextProvider } from '../context/themeContext'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeContextProvider>
+    <ThemeProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </ThemeContextProvider>
+    </ThemeProvider>
   )
 }
 

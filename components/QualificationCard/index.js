@@ -1,12 +1,13 @@
-import SQualificationCard from '../../UI/SQualificationCard'
-
+import styles from './qualificationCard.module.css'
 const QualificationCard = ({ title, institution, date }) => {
   return (
-    <SQualificationCard>
-      <h3>{title}</h3>
-      <p>{institution}</p>
-      <p>{date}</p>
-    </SQualificationCard>
+    <article className={styles.card}>
+      <h3 className={styles.title}>{title}</h3>
+      <div>
+        <p>{institution}</p>
+        <p>{date}</p>
+      </div>
+    </article>
   )
 }
 

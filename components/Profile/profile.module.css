@@ -1,3 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  grid-area: profile;
+  border-right: 1px solid var(--primary-color);
+}
+
 .title,
 .subtitle {
   margin: 0;
@@ -29,10 +40,38 @@
 .social {
   display: inline-flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+  padding: 0;
 }
 
 .socialItem {
   list-style: none;
   cursor: pointer;
+  color: rgb(32, 86, 187);
+}
+.socialItem:hover {
+  color: rgb(32, 143, 187);
+}
+.contactButton {
+  margin-top: 3rem;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  width: 60%;
+  height: 44px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+
+.contactButton:hover {
+  background: linear-gradient(
+    254deg,
+    rgb(211, 221, 241) 0%,
+    var(--primary-color) 100%
+  );
+  transform: scale(0.97);
 }

@@ -1,0 +1,14 @@
+.section {
+  margin-left: 50px;
+  color: var(--primary-color);
+}
+
+.paragraph {
+  color: var(--color-text);
+  max-width: 640px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}

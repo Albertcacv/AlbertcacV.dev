@@ -1,0 +1,24 @@
+.navItem:hover {
+  color: var(--nav-color-hover);
+}
+
+.navItem::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 2px;
+}
+
+.navItem:hover::after {
+  animation: navItemHover 0.5s linear forwards;
+  background: var(--nav-color-hover);
+}
+
+@keyframes navItemHover {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

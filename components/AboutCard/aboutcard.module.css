@@ -1,0 +1,40 @@
+.card {
+  padding: 10px;
+  width: 140px;
+  height: 150px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--card-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  border: 1px solid transparent;
+}
+.icon {
+  font-size: 1.5rem;
+}
+.description {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.title {
+  display: block;
+  width: 83px;
+}
+
+.number {
+  display: block;
+  width: 35px;
+  height: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card:hover {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: -1px 3px 15px -1px rgba(0, 0, 0, 0.53);
+}

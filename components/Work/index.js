@@ -1,17 +1,16 @@
 import QualificationCard from '../QualificationCard'
 
-const EDUCATION_ITEMS = [
+const WORK_ITEMS = [
   {
-    id: '1',
-    title: 'IT engineer',
-    institution: 'University of León, Spain',
-    date: '2018 - 2023',
+    title: 'Software engineer',
+    institution: 'HP - CDS',
+    date: '2021 - 2022',
   },
 ]
-const Education = () => {
+const Work = () => {
   return (
     <>
-      {EDUCATION_ITEMS.map(({ id, title, institution, date }) => (
+      {WORK_ITEMS.map(({ id, title, institution, date }) => (
         <QualificationCard
           key={id}
           title={title}
@@ -23,4 +22,4 @@ const Education = () => {
   )
 }
 
-export default Education
+export default Work

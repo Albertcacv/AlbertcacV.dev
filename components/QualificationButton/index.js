@@ -1,11 +1,18 @@
-import SQualificationButton from '../../UI/SQualificationButton'
 import styles from './qualificationButton.module.css'
-const QualificationButton = ({ icon: Icon, title }) => {
+const QualificationButton = ({ icon, title, actionState }) => {
+  const handleClick = () => {
+    if (icon.type.name === 'FaGraduationCap') {
+      actionState('Education')
+    } else {
+      actionState('Work')
+    }
+  }
+
   return (
-    <SQualificationButton>
-      <Icon />
+    <button className={styles.button} onClick={handleClick}>
+      {icon}
       <span className={styles.title}>{title}</span>
-    </SQualificationButton>
+    </button>
   )
 }
 
