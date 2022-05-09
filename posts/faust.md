@@ -14,7 +14,7 @@ Para el descubirmiento de IP de la maquina victima usaremos la herramienta arp-s
 arp-scan -l | grep "PCS"
 ```
 
-![](images/arp-scan.png)
+![](/Faust/arp-scan.png)
 
 Una vez descubierta la IP  podemos proceder con la metodologia correspondiente.
 
@@ -29,7 +29,7 @@ Vamos a proceder con el escaneo de puertos:
 sudo nmap -sS --min-rate 5000 -p- --open -n -Pn -vvv 192.168.0.35 -oG allPorts 
 ```
 
-![](images/allPorts.png)
+![](/Faust/allPorts.png)
 
 Tras el primer escaneo, obtenemos los puertos 22 y 80. El siguiente es paso es ver la version y servicios que corren en estos puertos. Para ello: 
 
@@ -37,7 +37,7 @@ Tras el primer escaneo, obtenemos los puertos 22 y 80. El siguiente es paso es v
 sudo nmap -sV -sC -p22,80 192.168.0.35 -oN targeted
 ```
 
-![](images/targeted.png)
+![](/Faust/targeted.png)
 
 Tras ejecutar whatweb y consultar la web, descubrimos que la pagina principal del servidor web corre bajo un CMS, concretamente, el CMS made simple.
 
@@ -50,12 +50,12 @@ El primer paso es realizar un fuzzeo de directorios para ver si existe alguna vi
 gobuster dir -u http://192.168.0.35 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,zip,bak -t 40
 ```
 
-![](images/gobuster.png)
+![](/Faust/gobuster.png)
 
 Con gobuster corriendo vemos ciertos directorios llamativos, entre ellos, admin.
 
 Al entrar en el directorio admin nos encontramos ante un panel de login
-![](images/panel-login.png)
+![](/Faust/panel-login.png)
 
 La primera opcion es buscar credenciales por defecto, no suelen funcionar pero nunca se sabe. 
 Al buscar en google, nos dice que las credenciales se pueden encontrar en un MariaDB pero claro, no tenemos acceso.
@@ -65,7 +65,7 @@ La segunda opcion es un ataque de fuerza bruta contra el panel de login. En este
 Para ello primero tenemos que saber como se tramita la peticion contra el panel.
 
 1. Tramitamos una peticion con un usuario y contraseña de ejemplo solo para ver que formato tiene la peticion.
-   ![](images/network.png)
+   ![](/Faust/network.png)
 
 2. haciendo uso de hydra y sabiendo que admin es un usuario válido:
 
@@ -73,6 +73,6 @@ Para ello primero tenemos que saber como se tramita la peticion contra el panel.
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.0.35 http-post-form "/admin/login.php:username=^USER^&password=^PASS^&loginsubmit=Submit:Incorrect" -I -f -t 30
 ```
 
-![](images/hydra-login.png)
+![](/Faust/hydra-login.png)
 
 ## PrivEsc

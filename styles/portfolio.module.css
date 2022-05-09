@@ -1,0 +1,17 @@
+.section {
+  margin-top: 2rem;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 49px;
+  color: var(--title-color);
+}
+
+.paragraph {
+  color: var(--paragraph-color);
+}

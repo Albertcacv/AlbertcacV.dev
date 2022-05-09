@@ -1,0 +1,26 @@
+.image {
+  border: 1px solid #3b82f6;
+  filter: drop-shadow(12px 12px 32px rgba(17, 17, 17, 0.11));
+  border-radius: 8px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--title-color);
+  margin-bottom: 0;
+}
+
+.parahraph {
+  color: var(--paragraph-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.buttons {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

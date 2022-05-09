@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { FaLightbulb, FaUser } from 'react-icons/fa'
+import { BsFilePost } from 'react-icons/bs'
+import { FaLightbulb, FaTwitter, FaUser } from 'react-icons/fa'
 import { FiHome } from 'react-icons/fi'
 import ThemeSwitcher from '../ThemeSwitcher'
 import styles from './bottom-bar.module.css'
@@ -44,7 +45,7 @@ export const BottomBar = () => {
               isActive === 'projects' ? `${styles.active}` : ''
             }`}
           >
-            <FaLightbulb size='1.5em' id='projects' />
+            <FaLightbulb size='1.5em' />
           </a>
         </Link>
         <Link href='/about' passHref>
@@ -54,7 +55,18 @@ export const BottomBar = () => {
               isActive === 'about' ? `${styles.active}` : ''
             }`}
           >
-            <FaUser size='1.5em' id='about' />
+            <FaUser size='1.5em' />
+          </a>
+        </Link>
+        <Link href='/blog'>
+          <a className={styles.item}>
+            <BsFilePost size='1.5em' />
+          </a>
+        </Link>
+
+        <Link href='https://twitter.com/AlbertcacV'>
+          <a className={styles.item}>
+            <FaTwitter size='1.5em' />
           </a>
         </Link>
 

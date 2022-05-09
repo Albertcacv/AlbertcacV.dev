@@ -1,8 +1,9 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import {marked} from 'marked'
+import { marked } from 'marked'
 import path from 'path'
 import styles from '../../styles/slug.module.css'
+
 export default function PostPage({
   frontmatter: { title, date },
   slug,
@@ -10,6 +11,7 @@ export default function PostPage({
 }) {
   return (
     <div className={styles.postBody}>
+      <span className={styles.date}>{date}</span>
       <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
     </div>
   )

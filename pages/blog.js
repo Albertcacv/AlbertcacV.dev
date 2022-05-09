@@ -13,11 +13,14 @@ export default function Blog({ posts }) {
         <title>AlbertcacV | Blog</title>
         <meta name='description' content='Blog site of AlbertcacV' />
       </Head>
-      <div className={styles.posts}>
-        {posts.map((post, index) => (
-          <Post post={post} key={index} />
-        ))}
-      </div>
+      <section className={styles.section}>
+        <h3 className={styles.title}>BLOG 📑</h3>
+        <div className={styles.posts}>
+          {posts.map((post, index) => (
+            <Post post={post} key={index} />
+          ))}
+        </div>
+      </section>
     </div>
   )
 }

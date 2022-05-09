@@ -11,6 +11,9 @@
   font-size: 24px;
   line-height: 37px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button::after {
@@ -34,9 +37,22 @@
 .title {
   font-weight: 700;
   font-size: 28px;
+  color: var(--title-color);
 }
 
+.titleColor {
+  background: linear-gradient(
+    90.2deg,
+    #3b82f6 23.77%,
+    #ec4899 53.43%,
+    #3b82f6 99.94%
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 .paragraph {
+  color: var(--paragraph-color);
   width: 305px;
   font-weight: 400;
   font-size: 20px;

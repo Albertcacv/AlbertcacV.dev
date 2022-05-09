@@ -1,0 +1,29 @@
+.button {
+  margin-top: 2rem;
+  color: white;
+  background-color: var(--primary-color);
+  width: 130px;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  border-color: var(--primary-color);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 37px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button::after {
+  left: 9px;
+  content: '';
+  position: absolute;
+  width: 124px;
+  height: 60px;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  top: -9px;
+  z-index: -1;
+}

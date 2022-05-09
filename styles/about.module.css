@@ -1,14 +1,49 @@
 .section {
-  margin-left: 50px;
-  color: var(--primary-color);
+  margin-top: 2rem;
+  padding: 0 1rem;
+  color: var(--title-color);
+}
+.title {
+  font-weight: 700;
+  font-size: 32px;
 }
 
-.paragraph {
-  color: var(--color-text);
-  max-width: 640px;
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.article {
+  margin-top: 1.2em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro {
+  font-size: 40px;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+  column-gap: 0.5em;
+  row-gap: 1rem;
+}
+
+.stackItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  background: #1d1e26;
 }

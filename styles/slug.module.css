@@ -1,10 +1,21 @@
 .postBody {
-  width: 70%;
-  padding: 1rem;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.2em;
-  line-height: 1.5;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+  margin-top: 2em;
+  padding: 0 20px;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.date {
+  font-weight: 400;
+  font-size: 16px;
+  border-bottom: 1px solid black;
 }

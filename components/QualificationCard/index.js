@@ -1,14 +1,10 @@
-import styles from './qualificationCard.module.css'
-const QualificationCard = ({ title, institution, date }) => {
+import styles from './infoCard.module.css'
+const InfoCard = ({ title }) => {
   return (
     <article className={styles.card}>
       <h3 className={styles.title}>{title}</h3>
-      <div>
-        <p>{institution}</p>
-        <p>{date}</p>
-      </div>
     </article>
   )
 }
 
-export default QualificationCard
+export default InfoCard
