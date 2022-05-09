@@ -1,5 +1,6 @@
 import { useTheme } from 'next-themes'
-import { SThemeSwitcher } from '../../UI/SThemeSwitcher'
+import styles from './theme-switcher.module.css'
+
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme()
 
@@ -8,9 +9,9 @@ const ThemeSwitcher = () => {
   }
 
   return (
-    <SThemeSwitcher onClick={toggleTheme}>
+    <button className={styles.button} onClick={toggleTheme}>
       {theme === 'light' ? '🌚' : '🌞'}
-    </SThemeSwitcher>
+    </button>
   )
 }
 
