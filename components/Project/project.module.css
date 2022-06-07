@@ -33,3 +33,16 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 570px) {
+  .image {
+    height: 290px;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .parahraph {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
