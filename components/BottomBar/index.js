@@ -73,9 +73,6 @@ export const BottomBar = () => {
         <li className={styles.item}>
           <ThemeSwitcher />
         </li>
-
-        {/* <li path='/blog' title='BLOG' /> */}
-        <li>{/* <ThemeSwitcher /> */}</li>
       </ul>
     </navbar>
   )

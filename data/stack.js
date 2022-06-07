@@ -1,0 +1,51 @@
+const SIZE = 60
+export const STACK = [
+  {
+    id: 1,
+    src: '/images/js.svg',
+    alt: 'Javascript',
+    width: SIZE,
+    height: SIZE,
+    className: `styles.image`,
+  },
+  {
+    id: 2,
+    src: '/images/mongo.svg',
+    alt: 'Mongo',
+    width: SIZE,
+    height: SIZE,
+    className: `styles.image`,
+  },
+  {
+    id: 3,
+    src: '/images/next.svg',
+    alt: 'Next',
+    width: SIZE,
+    height: SIZE,
+    className: `styles.image`,
+  },
+  {
+    id: 4,
+    src: '/images/node.svg',
+    alt: 'Node',
+    width: SIZE,
+    height: SIZE,
+    className: `styles.image`,
+  },
+  {
+    id: 5,
+    src: '/images/react.svg',
+    alt: 'React',
+    width: SIZE,
+    height: SIZE,
+    className: `styles.image`,
+  },
+  {
+    id: 6,
+    src: '/images/ts.svg',
+    alt: 'TypeScript',
+    width: SIZE,
+    height: SIZE,
+    className: `styles.image`,
+  },
+]

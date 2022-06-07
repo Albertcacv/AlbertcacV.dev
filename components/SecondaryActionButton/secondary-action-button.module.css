@@ -3,27 +3,28 @@
   color: white;
   background-color: var(--primary-color);
   width: 130px;
-  height: 60px;
-  border: none;
+  height: 63px;
   border-radius: 12px;
   border-color: var(--primary-color);
   font-weight: 700;
   font-size: 19px;
   line-height: 37px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  position: relative;
 }
 
-.button::after {
+.button::before {
   left: 9px;
   content: '';
   position: absolute;
   width: 124px;
   height: 60px;
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
   border-radius: 12px;
   top: -9px;
-  z-index: -1;
+  border-left: none;
+  border-bottom: none;
 }

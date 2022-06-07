@@ -4,9 +4,9 @@ import SecondaryActionButton from '../SecondaryActionButton'
 import styles from './project.module.css'
 const Project = ({ title, description, image, viewLink, codeLink }) => {
   return (
-    <article>
+    <article className={styles.article}>
       <div className={styles.image}>
-        <Image src={image} alt='project image' width={500} height={300} />
+        <Image src={image} alt='project image' layout='fill' />
       </div>
       <h4 className={styles.title}>{title}</h4>
       <p>{description}</p>

@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import InfoCard from '../components/QualificationCard'
+import { StackItem } from '../components/StackItem'
+import { STACK } from '../data/stack'
 import styles from '../styles/about.module.css'
 
 export default function About() {
@@ -20,63 +21,17 @@ export default function About() {
       <article>
         <h3 className={styles.title}>Tech Stack</h3>
         <div className={styles.stack}>
-          <div className={styles.stackItem}>
-            <Image
-              src='/images/js.svg'
-              alt='Javascript'
-              width={60}
-              height={60}
-              className={styles.image}
+          {STACK.map(({ id, src, alt, width, height, className }) => (
+            <StackItem
+              key={id}
+              src={src}
+              alt={alt}
+              width={width}
+              height={height}
+              className={className}
             />
-          </div>
-          <div className={styles.stackItem}>
-            <Image
-              src='/images/mongo.svg'
-              alt='Mongo'
-              width={60}
-              height={60}
-              className={styles.image}
-            />
-          </div>
-          <div className={styles.stackItem}>
-            {' '}
-            <Image
-              src='/images/next.svg'
-              alt='Next'
-              width={60}
-              height={60}
-              className={styles.image}
-            />
-          </div>
-          <div className={styles.stackItem}>
-            {' '}
-            <Image
-              src='/images/node.svg'
-              alt='Node'
-              width={60}
-              height={60}
-              className={styles.image}
-            />
-          </div>
-          <div className={styles.stackItem}>
-            {' '}
-            <Image
-              src='/images/react.svg'
-              alt='React'
-              width={60}
-              height={60}
-              className={styles.image}
-            />
-          </div>
-          <div className={styles.stackItem}>
-            <Image
-              src='/images/ts.svg'
-              alt='TypeScript'
-              width={60}
-              height={60}
-              className={styles.image}
-            />
-          </div>
+          ))}
+     
         </div>
       </article>
     </section>

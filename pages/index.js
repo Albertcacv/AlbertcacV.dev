@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import ActionButton from '../components/ActionButton'
 import styles from '../styles/home.module.css'
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>AlbertcacV | Home</title>
         <meta name='description' content='Home site of AlbertcacV' />
@@ -19,10 +18,12 @@ export default function Home() {
           Let me help you grow your business and make your product look pretty
           while at it
         </p>
-        <Link href='https://www.linkedin.com/in/albertcacv/' passHref>
-          <ActionButton title="Say Hello"/>
-        </Link>
+
+        <ActionButton
+          path='https://www.linkedin.com/in/albertcacv/'
+          title='Say Hello'
+        />
       </section>
-    </div>
+    </>
   )
 }
