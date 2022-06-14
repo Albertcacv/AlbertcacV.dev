@@ -29,4 +29,16 @@ export const NAVIGATION = [
     action: '',
     title: 'twitter',
   },
+  {
+    id: 6,
+    href: 'https://github.com/Albertcacv',
+    action: '',
+    title: 'github',
+  },
+  {
+    id: 7,
+    href: 'https://www.linkedin.com/in/albertcacv/',
+    action: '',
+    title: 'linkedin',
+  },
 ]

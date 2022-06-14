@@ -14,7 +14,6 @@ export default function Blog({ posts }) {
         <meta name='description' content='Blog site of AlbertcacV' />
       </Head>
       <section className={styles.section}>
-        <h3 className={styles.title}>BLOG 📑</h3>
         <div className={styles.posts}>
           {posts.map((post, index) => (
             <Post post={post} key={index} />

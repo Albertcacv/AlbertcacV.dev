@@ -32,7 +32,7 @@
 
 .stack {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 300px));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   column-gap: 0.5em;
   row-gap: 1rem;
 }
@@ -46,4 +46,14 @@
 
 .image {
   background: #1d1e26;
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 0 4em;
+  }
+  .article {
+    display: flex;
+    justify-content: space-around;
+  }
 }

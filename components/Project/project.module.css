@@ -46,3 +46,17 @@
     line-height: 32px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .image {
+    width: 100%;
+  }
+  .title {
+    margin-top: .5em;
+    font-size: 48px;
+  }
+  .parahraph {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

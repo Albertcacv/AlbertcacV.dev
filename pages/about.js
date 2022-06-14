@@ -7,7 +7,6 @@ export default function About() {
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>About Me 👨‍</h2>
-      <p className={styles.subtitle}>A brief intro of me:</p>
       <span className={styles.intro}>
         I am <b>ALBERTO!</b>
       </span>
@@ -31,7 +30,6 @@ export default function About() {
               className={className}
             />
           ))}
-     
         </div>
       </article>
     </section>

@@ -17,3 +17,16 @@
   color: var(--paragraph-color);
 }
 
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 0 10em;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    column-gap: 4em;
+    row-gap: 1rem;
+  }
+
+}
