@@ -1,0 +1,43 @@
+.card {
+  border: 1px solid var(--bottom-bar-color);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  height: 60px;
+  width: 240px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 21px;
+  left: 9px;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  -webkit-clip-path: polygon(50% 0%, 52% 100%, 100% 50%);
+  clip-path: polygon(50% 0%, 52% 100%, 100% 50%);
+  top: -2px;
+  right: -2rem;
+  display: block;
+  width: 66px;
+  height: 62px;
+  background-color: var(--bottom-bar-color);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 1.3em;
+}
