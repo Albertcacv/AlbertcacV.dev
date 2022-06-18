@@ -1,26 +1,22 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "@example/portfolio",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.3",
-    "marked": "^4.0.15",
-    "next": "12.1.0",
-    "next-themes": "^0.1.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-markdown": "^8.0.3"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^2.0.7",
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "@astrojs/preact": "^0.1.3",
+    "@astrojs/react": "^0.1.3",
+    "astro": "^1.0.0-beta.47",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.52.2"
+  },
+  "dependencies": {
+    "preact": "^10.7.3"
   }
 }
