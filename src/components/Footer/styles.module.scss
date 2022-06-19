@@ -1,11 +1,91 @@
 .footer {
-	text-align: center;
-	padding-top: 8rem;
-	padding-right: 2rem;
-	padding-bottom: 4rem;
-	padding-left: 2rem;
-}
+	position: absolute;
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
 
+	&__logo {
+		background-color: none;
+	}
+
+	&__h2 {
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 58px;
+	}
+
+	&__text {
+		font-weight: 900;
+		font-size: 28px;
+		color: rgba(0, 0, 0, 0.54);
+	}
+	&__social {
+		margin-top: 2em;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 50%;
+	}
+
+	&__icon {
+		display: block;
+		width: 25px;
+	}
+
+	&__span {
+		color: rgba(101, 31, 255, 1);
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 45%;
+	}
+	&__contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+	}
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--c-background-form);
+	height: 100%;
+	width: 306px;
+	border-radius: 10px;
+	padding: 1rem;
+
+	&__input {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 1rem;
+		padding: 5px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid rgba(128, 128, 128, 0.596);
+	}
+
+	&__textarea {
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid rgba(128, 128, 128, 0.596);
+
+		resize: none;
+		width: 100%;
+		min-height: 5em;
+		margin-bottom: 2em;
+	}
+}
 .byline {
 	display: block;
 	margin-top: 1rem;
