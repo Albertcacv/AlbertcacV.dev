@@ -3,17 +3,17 @@ const OPTIONS = [
 	{
 		name: 'Linkedin',
 		url: 'https://www.linkedin.com/in/albertcacv/',
-		icon: '/src/assets/linkedin.svg',
+		icon: '../../assets/linkedin.svg',
 	},
 	{
 		name: 'Twitter',
 		url: 'https://twitter.com/AlbertcacV',
-		icon: '/src/assets/twitter.svg',
+		icon: '../../assets/twitter.svg',
 	},
 	{
 		name: 'Github',
 		url: 'https://github.com/Albertcacv',
-		icon: '/src/assets/github.svg',
+		icon: '../../assets/github.svg',
 	},
 ];
 const Social = () => {
