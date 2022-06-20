@@ -1,0 +1,54 @@
+.subtitle {
+	color: #747689;
+	margin: 0;
+	font-size: 24px;
+}
+
+.title {
+	color: #0689b0;
+	margin: 0;
+	font-size: 36px;
+}
+
+.section {
+	margin-top: 2em;
+	background-color: rgba(255, 255, 255, 0.315);
+}
+
+.skillArticle {
+	height: 10em;
+	margin-top: 1em;
+}
+
+.skillContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.hero {
+	position: relative;
+}
+@media screen and (min-width: 1024px) {
+	.section {
+		justify-content: flex-start;
+		box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.23);
+		width: 30em;
+		padding: 20px;
+		border-radius: 12px;
+	}
+
+	.article {
+		display: flex;
+		padding-left: 10px;
+	}
+
+	.skillContent {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.title {
+		font-size: 64px;
+	}
+}
