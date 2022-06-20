@@ -1,0 +1,23 @@
+.skills {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	row-gap: 1em;
+	margin-top: 20px;
+}
+
+.span {
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 27px;
+	color: #747689;
+}
+
+
+.imgMid {
+	grid-column: 2/3;
+}
+
+.imgMidBottom {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}

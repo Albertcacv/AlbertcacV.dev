@@ -1,22 +1,18 @@
 {
-  "name": "@example/portfolio",
-  "version": "0.0.1",
+  "name": "vite-project",
   "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
-  },
-  "devDependencies": {
-    "@astrojs/preact": "^0.1.3",
-    "@astrojs/react": "^0.1.3",
-    "astro": "^1.0.0-beta.47",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.52.2"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.7.3"
+    "preact": "^10.5.15"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.1.5",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
   }
 }

@@ -1,0 +1,25 @@
+.subtitle {
+	color: #747689;
+	margin: 0;
+	font-size: 24px;
+}
+
+.title {
+	color: #0689b0;
+	margin: 0;
+	font-size: 36px;
+}
+
+.section {
+	margin-top: 2em;
+}
+
+.article {
+	height: 10em;
+}
+
+.articleContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
