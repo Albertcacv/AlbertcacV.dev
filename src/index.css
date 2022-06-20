@@ -6,7 +6,7 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #fafafa;
+	background: #dcdcdd;
 	font-family: 'Poppins', 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
 	color: #444;
@@ -29,4 +29,21 @@ body {
 
 .link {
 	color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+	#app {
+		text-align: start;
+		/* padding: 3rem; */
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	/* body {
+		background-image: url('/src/assets/Cover.png');
+		background-repeat: no-repeat;
+		background-position: rigth;
+		background-attachment: fixed;
+		object-fit: fill;
+	} */
 }

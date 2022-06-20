@@ -1,11 +1,13 @@
-.article {
+.projectArticle {
 	position: relative;
+	margin-right: 10px;
 }
 .projectOpacity {
 	opacity: 0.2;
 }
 .projectImg {
 	width: 100%;
+	min-height: 210px;
 }
 
 .projectOverlay {
@@ -19,7 +21,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	color: #000;
+	color: #fff;
 	text-align: center;
 	z-index: 1;
 	animation: alternate 1s ease-in-out;
@@ -51,4 +53,20 @@
 
 .description {
 	font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+	.projectArticle {
+		width: 15em;
+		border-radius: 15px;
+	}
+
+	.projectArticle:hover {
+		transform: scale(0.99);
+	}
+
+	.projectImage {
+		width: 50%;
+		border-radius: 15px;
+	}
 }

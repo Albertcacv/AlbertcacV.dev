@@ -6,5 +6,13 @@
 		"image": "/src/assets/gym-trainer-preview.png",
 		"viewLink": "",
 		"codeLink": "https://github.com/Albertcacv/gym-trainer"
+	},
+	{
+		"id": 2,
+		"title": "Dashboard UI",
+		"description": "React Admin Dashboard App With Theming, Tables, Charts, Calendar and Kanban",
+		"image": "/src/assets/dashboard-preview.png",
+		"viewLink": "",
+		"codeLink": ""
 	}
 ]

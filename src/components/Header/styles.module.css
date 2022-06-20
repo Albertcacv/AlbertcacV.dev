@@ -1,3 +1,12 @@
 .header {
-  max-height: 4em;
+	max-height: 4em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.header {
+		justify-content: flex-start;
+	}
 }

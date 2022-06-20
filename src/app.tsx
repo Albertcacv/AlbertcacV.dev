@@ -5,16 +5,13 @@ import Projects from './components/Projects';
 
 export function App() {
 	return (
-		<>
+		<div class='App-main'>
 			<main>
 				<Header />
+
 				<Hero />
 				<Projects />
 			</main>
-
-			<footer class='App-footer'>
-				Developed by <a href='https://github.com/Albertcacv'>AlbertcacV🔥</a>
-			</footer>
-		</>
+		</div>
 	);
 }

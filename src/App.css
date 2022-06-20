@@ -1,10 +1,12 @@
 .App-footer {
-	margin-top: 2em;
+	text-align: center;
+	margin-bottom: 2em;
+
 	color: #000;
 	font-size: 0.7em;
 }
 .App-footer > a {
 	text-decoration: none;
 	color: #000;
-  font-weight: 600;
+	font-weight: 600;
 }

@@ -20,7 +20,7 @@ const Project = ({ project }: ProjectProps) => {
 	console.log(isHovered);
 	return (
 		<article
-			className={styles.article}
+			className={styles.projectArticle}
 			onClick={() => setIsHovered(!isHovered)}
 		>
 			<img
@@ -36,8 +36,22 @@ const Project = ({ project }: ProjectProps) => {
 					<h3 className={styles.title}>{project.title}</h3>
 					<p className={styles.description}>{project.description}</p>
 					<div className={styles.projectOverlayLinks}>
-						<a className={styles.projectButton} href={project.viewLink} target="_blank" rel='noopener noreferrer'>View</a>
-						<a className={styles.projectButton} href={project.codeLink} target="_blank" rel='noopener noreferrer'>Code</a>
+						<a
+							className={styles.projectButton}
+							href={project.viewLink}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							View
+						</a>
+						<a
+							className={styles.projectButton}
+							href={project.codeLink}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							Code
+						</a>
 					</div>
 				</div>
 			)}
