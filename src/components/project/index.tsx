@@ -1,3 +1,6 @@
+import { useState } from 'preact/hooks';
+import styles from './styles.module.css';
+
 type Project = {
 	id: number;
 	title: string;
@@ -12,13 +15,32 @@ interface ProjectProps {
 }
 
 const Project = ({ project }: ProjectProps) => {
+	const [isHovered, setIsHovered] = useState(false);
+
+	console.log(isHovered);
 	return (
-		<article>
-			<img src={project.image} />
-			<h3>{project.title}</h3>
-			<p>{project.description}</p>
-			<a href={project.viewLink}>View</a>
-			<a href={project.codeLink}>Code</a>
+		<article
+			className={styles.article}
+			onClick={() => setIsHovered(!isHovered)}
+		>
+			<img
+				src={project.image}
+				className={
+					isHovered
+						? `${styles.projectImg} ${styles.projectOpacity}`
+						: styles.projectImg
+				}
+			/>
+			{isHovered && (
+				<div className={styles.projectOverlay}>
+					<h3 className={styles.title}>{project.title}</h3>
+					<p className={styles.description}>{project.description}</p>
+					<div className={styles.projectOverlayLinks}>
+						<a className={styles.projectButton} href={project.viewLink} target="_blank" rel='noopener noreferrer'>View</a>
+						<a className={styles.projectButton} href={project.codeLink} target="_blank" rel='noopener noreferrer'>Code</a>
+					</div>
+				</div>
+			)}
 		</article>
 	);
 };

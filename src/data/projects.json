@@ -1,10 +1,10 @@
 [
 	{
 		"id": 1,
-		"title": "The Shawshank Redemption",
-		"description": "Two imprisoned",
+		"title": "Gym-Trainer",
+		"description": "React application for find exercises and gym videos",
 		"image": "/src/assets/gym-trainer-preview.png",
-		"viewLink": "https://www.youtube.com/watch?v=6hB3S9bIaco",
-		"codeLink": "ShawshankRedemption.dart"
+		"viewLink": "",
+		"codeLink": "https://github.com/Albertcacv/gym-trainer"
 	}
 ]

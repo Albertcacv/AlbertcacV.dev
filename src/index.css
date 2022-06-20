@@ -23,6 +23,8 @@ body {
 	text-align: center;
 	color: #fff;
 	font-size: 1.5em;
+	padding: 0 10px;
+	position: relative;
 }
 
 .link {
