@@ -1,17 +1,21 @@
 import './App.css';
+import About from './components/About';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 
 export function App() {
 	return (
-		<div class='App-main'>
-			<main>
-				<Header />
+		<div className='App'>
+			<Header />
+			<Hero />
 
-				<Hero />
-				<Projects />
-			</main>
+			<Projects />
+			<div className='App-footer'>
+				<About />
+				<Footer />
+			</div>
 		</div>
 	);
 }

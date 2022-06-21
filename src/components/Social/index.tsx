@@ -18,8 +18,7 @@ const OPTIONS = [
 ];
 const Social = () => {
 	return (
-		<section className={styles.section}>
-			<h2 className={styles.h2}>Social</h2>
+		<section className={styles.socialSection}>
 			<div className={styles.social}>
 				{OPTIONS.map((option) => (
 					<a href={option.url} target='_blank' rel='noopener noreferrer' className={styles.link}>

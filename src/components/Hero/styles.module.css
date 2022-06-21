@@ -1,54 +1,22 @@
-.subtitle {
-	color: #747689;
-	margin: 0;
-	font-size: 24px;
-}
-
-.title {
-	color: #0689b0;
-	margin: 0;
-	font-size: 36px;
-}
-
-.section {
-	margin-top: 2em;
-	background-color: rgba(255, 255, 255, 0.315);
-}
-
-.skillArticle {
-	height: 10em;
-	margin-top: 1em;
-}
-
-.skillContent {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
 .hero {
-	position: relative;
+	margin-top: 3em;
+	font-family: "Eina01", "Poppins", "Helvetica Neue", arial, sans-serif;
 }
-@media screen and (min-width: 1024px) {
-	.section {
-		justify-content: flex-start;
-		box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.23);
-		width: 30em;
-		padding: 20px;
-		border-radius: 12px;
-	}
-
-	.article {
-		display: flex;
-		padding-left: 10px;
-	}
-
-	.skillContent {
-		display: flex;
-		justify-content: flex-start;
-	}
-
-	.title {
-		font-size: 64px;
-	}
+.title {
+	display: block;
+	color: #221e41;
+	margin: 0;
+	font-size: 32px;
+	font-weight: 600;
+	width: 300px;
+	text-align: center;
+	margin-bottom: .4em;
 }
+
+.subtitle {
+	color: #757384;
+	margin: 0;
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+

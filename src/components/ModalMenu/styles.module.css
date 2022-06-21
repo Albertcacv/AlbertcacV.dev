@@ -1,0 +1,29 @@
+.modalMenuContainer {
+	background-color: #fff;
+	position: absolute;
+	top: 3em;
+	width: 100%;
+	transition: all 0.3s linear 0s;
+	z-index: 10;
+}
+
+.modalMenuList {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modalMenuItem {
+	width: 100%;
+	height: 60px;
+	list-style: none;
+	font-size: 14px;
+	color: #727275;
+	padding: 0;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

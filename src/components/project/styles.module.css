@@ -1,11 +1,19 @@
 .projectArticle {
 	position: relative;
 	margin-right: 10px;
+	background-color: blueviolet;
+	width: 100%;
+	height: 507px;
+	margin-bottom: 0.6em;
+	border-radius: 14px;
 }
-.projectOpacity {
-	opacity: 0.2;
+
+.projectImage {
+	object-fit: cover;
+	width: 100%;
+	
 }
-.projectImg {
+/* .projectImg {
 	width: 100%;
 	min-height: 210px;
 }
@@ -69,4 +77,4 @@
 		width: 50%;
 		border-radius: 15px;
 	}
-}
+} */

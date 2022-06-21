@@ -1,12 +1,10 @@
-.App-footer {
-	text-align: center;
-	margin-bottom: 2em;
-
-	color: #000;
-	font-size: 0.7em;
+.App {
+	scroll-behavior: smooth;
+	font-family: 'Eina01', 'Poppins', 'Helvetica Neue', arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.App-footer > a {
-	text-decoration: none;
-	color: #000;
-	font-weight: 600;
+.App-footer {
+	position: relative;
 }

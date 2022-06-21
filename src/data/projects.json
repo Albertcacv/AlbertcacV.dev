@@ -3,6 +3,7 @@
 		"id": 1,
 		"title": "Gym-Trainer",
 		"description": "React application for find exercises and gym videos",
+		"mobileImage": "../../assets/project-preview-mobile.png",
 		"image": "../../assets/gym-trainer-preview.png",
 		"viewLink": "",
 		"codeLink": "https://github.com/Albertcacv/gym-trainer"
