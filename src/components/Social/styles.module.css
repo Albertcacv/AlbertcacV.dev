@@ -3,17 +3,26 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 5em;
+	margin-top: 3em;
+	width: 100%;
 }
 
-.social {
+.socialList {
 	width: 100%;
+	padding: 0;
 	display: flex;
+	justify-content: center;
+}
 
+.socialItem {
+	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
+	list-style: none;
+	padding: 10px;
 }
 
 .link {
+	display: block;
 	width: 45px;
 }

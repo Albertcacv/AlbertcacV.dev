@@ -1,7 +1,6 @@
 import styles from './styles.module.css';
 
 type Project = {
-	id: number;
 	title: string;
 	description: string;
 	mobileImage: string;
@@ -11,15 +10,14 @@ type Project = {
 };
 
 interface ProjectProps {
-	project: Project;
+	projectInfo: Project;
 }
 
-const Project = ({ project }: ProjectProps) => {
+const ProjectCard = ({ projectInfo }: ProjectProps) => {
+	console.log(projectInfo);
 	return (
-		<article className={styles.projectArticle}>
-			
-		</article>
+		<article className={styles.projectArticle}>{projectInfo.title}</article>
 	);
 };
 
-export default Project;
+export default ProjectCard;

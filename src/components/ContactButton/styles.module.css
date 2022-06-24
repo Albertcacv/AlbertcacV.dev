@@ -3,12 +3,17 @@
 	border-color: #00adff;
 	color: #fff;
 	border-radius: 7px;
-	letter-spacing: 0.2px;
-	line-height: 19px;
-	width: 140px;
-	height: 40px;
+	width: 80%;
+	height: 52px;
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+	.contactButton {
+		width: 220px;
+	}
 }

@@ -8,7 +8,7 @@ const ContactButton = () => {
 			rel='noopener noreferrer'
 			className={styles.contactButton}
 		>
-			LET'S TALK
+			Let's Talk
 		</a>
 	);
 };

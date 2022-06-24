@@ -8,13 +8,15 @@ import Projects from './components/Projects';
 export function App() {
 	return (
 		<div className='App'>
-			<Header />
-			<Hero />
+			<div className='App-wrapper'>
+				<Header />
+				<Hero />
 
-			<Projects />
-			<div className='App-footer'>
-				<About />
-				<Footer />
+				<Projects />
+				<div className='App-footer'>
+					<About />
+					<Footer />
+				</div>
 			</div>
 		</div>
 	);

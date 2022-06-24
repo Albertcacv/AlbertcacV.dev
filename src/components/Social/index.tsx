@@ -3,29 +3,36 @@ const OPTIONS = [
 	{
 		name: 'Linkedin',
 		url: 'https://www.linkedin.com/in/albertcacv/',
-		icon: '../../assets/linkedin.svg',
+		icon: '../../assets/linkedin_svg.png',
 	},
 	{
 		name: 'Twitter',
 		url: 'https://twitter.com/AlbertcacV',
-		icon: '../../assets/twitter.svg',
+		icon: '../../assets/twitter_svg.png',
 	},
 	{
 		name: 'Github',
 		url: 'https://github.com/Albertcacv',
-		icon: '../../assets/github.svg',
+		icon: '../../assets/github_svg.png',
 	},
 ];
 const Social = () => {
 	return (
 		<section className={styles.socialSection}>
-			<div className={styles.social}>
+			<ul className={styles.socialList}>
 				{OPTIONS.map((option) => (
-					<a href={option.url} target='_blank' rel='noopener noreferrer' className={styles.link}>
-						<img src={option.icon} alt={option.name} />
-					</a>
+					<li className={styles.socialItem}>
+						<a
+							href={option.url}
+							target='_blank'
+							rel='noopener noreferrer'
+							className={styles.link}
+						>
+							<img src={option.icon} alt={option.name} />
+						</a>
+					</li>
 				))}
-			</div>
+			</ul>
 		</section>
 	);
 };

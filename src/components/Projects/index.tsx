@@ -1,6 +1,15 @@
-import projects from '../../data/projects.json';
-import Project from '../project';
+import { projectsData } from '../../data/projectsData';
+import ProjectCard from '../ProjectCard';
 import styles from './styles.module.css';
+// type Project = {
+// 	id: number;
+// 	title: string;
+// 	description: string;
+// 	mobileImage: string;
+// 	image: string;
+// 	viewLink: string;
+// 	codeLink: string;
+// };
 const Projects = () => {
 	return (
 		<section className={styles.projects}>
@@ -8,9 +17,13 @@ const Projects = () => {
 			<p className={styles.subtitle}>
 				I've worked on a number of projects, some of which are listed below.
 			</p>
-			{projects.map((project) => {
-				return <Project key={project.id} project={project} />;
-			})}
+			{projectsData.length > 0 ? (
+				projectsData.map((project) => (
+					<ProjectCard key={project.id} projectInfo={project} />
+				))
+			) : (
+				<span>SOON...</span>
+			)}
 		</section>
 	);
 };
