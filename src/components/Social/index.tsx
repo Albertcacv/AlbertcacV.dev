@@ -1,35 +1,40 @@
 import styles from './styles.module.css';
 
+type Option = {
+	name: keyof typeof String;
+	url: string;
+};
 const OPTIONS = [
 	{
 		name: 'Linkedin',
 		url: 'https://www.linkedin.com/in/albertcacv/',
-		icon: '/src/assets/linkedin_svg.png',
+		icon: '../../../assets/github_svg.png',
 	},
 	{
 		name: 'Twitter',
 		url: 'https://twitter.com/AlbertcacV',
-		icon: '/src/assets/twitter_svg.png',
+		icon: '../../../assets/twitter_svg.png',
 	},
 	{
 		name: 'Github',
 		url: 'https://github.com/Albertcacv',
-		icon: '/src/assets/github_svg.png',
+		icon: '../../../assets/github_svg.png',
 	},
 ];
+
 const Social = () => {
 	return (
 		<section className={styles.socialSection}>
 			<ul className={styles.socialList}>
-				{OPTIONS.map((option) => (
+				{OPTIONS.map(({ name, icon, url }) => (
 					<li className={styles.socialItem}>
 						<a
-							href={option.url}
+							href={url}
 							target='_blank'
 							rel='noopener noreferrer'
 							className={styles.link}
 						>
-							<img src={option.icon} alt={option.name} />
+							<img src={icon} alt={name} />
 						</a>
 					</li>
 				))}
