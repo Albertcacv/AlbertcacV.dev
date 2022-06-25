@@ -11,8 +11,8 @@
 	background-color: white;
 }
 
-@media screen and (min-width: 991px) {
-	.menuButton {
+@media screen and (min-width: 992px) {
+	.menuButtonClose {
 		display: none;
 	}
 }

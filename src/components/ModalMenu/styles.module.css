@@ -28,9 +28,19 @@
 	justify-content: center;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
 	.modalMenuContainer {
 		position: relative;
-		z-index: 1;
+		width: 200px;
+	}
+
+	.modalMenuList {
+		flex-direction: row;
+	}
+
+	.modalMenuItem {
+		width: 200px;
+		height: 20px;
+		font-weight: 400;
 	}
 }

@@ -13,10 +13,11 @@ export function App() {
 				<Hero />
 
 				<Projects />
-				<div className='App-footer'>
+				<footer className='App-footer'>
 					<About />
+
 					<Footer />
-				</div>
+				</footer>
 			</div>
 		</div>
 	);

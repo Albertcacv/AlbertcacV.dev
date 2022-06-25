@@ -1,18 +1,11 @@
-import { useRef } from 'preact/hooks';
 import styles from './styles.module.css';
 const ProjectsButton = () => {
-	const buttonProject = useRef(null);
-
-	// const handleClick = () => {
-	// 	buttonProject &&
-	// 		buttonProject.current.scrollIntoView({
-	// 			behavior: 'smooth',
-	// 			block: 'start',
-	// 		});
-	// };
+	const handleClick = () => {
+		window.scrollTo(0, 200);
+	};
 
 	return (
-		<button className={styles.projectsButton}>
+		<button className={styles.projectsButton} onClick={handleClick}>
 			See Projects <span className={styles.projectsButtonArrow}> {'>'} </span>
 		</button>
 	);

@@ -42,5 +42,6 @@
 	.aboutDescription {
 		font-size: 26px;
 		max-width: 100%;
+		height: 100%;
 	}
 }
