@@ -1,24 +1,27 @@
+import { JSX } from 'preact';
+import GithubSVG from '../GithubSVG';
+import LinkedinSVG from '../LinkedinSVG';
+import TwitterSVG from '../TwitterSVG';
 import styles from './styles.module.css';
 
-type Option = {
-	name: keyof typeof String;
-	url: string;
+const ICONS: { [name: string]: JSX.Element } = {
+	Linkedin: <LinkedinSVG />,
+	Twitter: <TwitterSVG />,
+	Github: <GithubSVG />,
 };
+
 const OPTIONS = [
 	{
-		name: 'Linkedin',
+		title: 'Linkedin',
 		url: 'https://www.linkedin.com/in/albertcacv/',
-		icon: '../../../assets/github_svg.png',
 	},
 	{
-		name: 'Twitter',
+		title: 'Twitter',
 		url: 'https://twitter.com/AlbertcacV',
-		icon: '../../../assets/twitter_svg.png',
 	},
 	{
-		name: 'Github',
+		title: 'Github',
 		url: 'https://github.com/Albertcacv',
-		icon: '../../../assets/github_svg.png',
 	},
 ];
 
@@ -26,7 +29,7 @@ const Social = () => {
 	return (
 		<section className={styles.socialSection}>
 			<ul className={styles.socialList}>
-				{OPTIONS.map(({ name, icon, url }) => (
+				{OPTIONS.map(({ title, url }) => (
 					<li className={styles.socialItem}>
 						<a
 							href={url}
@@ -34,7 +37,7 @@ const Social = () => {
 							rel='noopener noreferrer'
 							className={styles.link}
 						>
-							<img src={icon} alt={name} />
+							{ICONS[title]}
 						</a>
 					</li>
 				))}
