@@ -8,7 +8,7 @@ const ModalMenu = ({ showMenu }: ModalMenuProps) => {
 	return (
 		<section
 			className={`${styles.modalMenuContainer} ${
-				showMenu ? `${styles.open}` : 'close'
+				!showMenu ? `${styles.close}` : ''
 			}`}
 		>
 			<ul className={styles.modalMenuList}>

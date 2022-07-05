@@ -1,17 +1,33 @@
 .projectArticle {
-	position: relative;
 	margin-right: 10px;
-	background-color: blueviolet;
 	width: 100%;
 	height: 507px;
 	margin-bottom: 0.6em;
 	border-radius: 14px;
+	color: white;
+	border-radius: 13px;
+	background-color: #3a3c70;
+	display: flex;
+	flex-direction: column;
+}
+.projectInfo {
+	padding-left: 20px;
+	padding-top: 20px;
+	width: 60%;
+	height: 45%;
+	text-align: start;
 }
 
-.projectImage {
-	object-fit: cover;
+.projectImageContainer {
 	width: 100%;
-	
+	height: 55%;
+	background-color: #74e1ef;
+}
+.projectImage {
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 /* .projectImg {
 	width: 100%;

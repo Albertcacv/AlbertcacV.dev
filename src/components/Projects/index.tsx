@@ -6,7 +6,6 @@ type Project = {
 	id: number;
 	title: string;
 	description: string;
-	mobileImage: string;
 	image: string;
 	viewLink: string;
 	codeLink: string;

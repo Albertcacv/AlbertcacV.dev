@@ -1,6 +1,6 @@
 .aboutSection {
 	background-color: #6937ff;
-	height: 990px;
+	height: 790px;
 	border-top-left-radius: 55px;
 }
 
@@ -25,7 +25,7 @@
 	color: #cdcbdf;
 	font-size: 20px;
 	margin-bottom: 3em;
-	max-width: 250px;
+	max-width: 300px;
 }
 
 @media screen and (min-width: 768px) {
