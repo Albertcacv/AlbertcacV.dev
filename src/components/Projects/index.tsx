@@ -1,6 +1,6 @@
 import { projectsData } from '../../data/projectsData';
 import ProjectCard from '../ProjectCard';
-import styles from './styles.module.css';
+import styles from './projects.module.css';
 
 type Project = {
 	id: number;
@@ -14,7 +14,7 @@ type Project = {
 const Projects = () => {
 	return (
 		<section className={styles.projects}>
-			<h2 className={styles.title}>Recent Projects</h2>
+			<h2 className={styles.title}>Projects</h2>
 			<p className={styles.subtitle}>
 				I've worked on a number of projects, some of which are listed below.
 			</p>

@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './project-card.module.css';
 
 type Project = {
 	title: string;
@@ -13,16 +13,15 @@ interface ProjectProps {
 }
 
 const ProjectCard = ({ projectInfo }: ProjectProps) => {
-	console.log(projectInfo);
 	return (
 		<article className={styles.projectArticle}>
-			<div className={styles.projectInfo}>
-				<span>{projectInfo.title}</span>
-				<p>{projectInfo.description}</p>
-			</div>
-			<div className={styles.projectImageContainer}>
+			<section className={styles.projectImageContainer}>
 				<img src={projectInfo.image} className={styles.projectImage} />
-			</div>
+			</section>
+			<section className={styles.projectInfo}>
+				<span className={styles.projectTitle}> {projectInfo.title}</span>
+				<p className={styles.projectDescription}>{projectInfo.description}</p>
+			</section>
 		</article>
 	);
 };

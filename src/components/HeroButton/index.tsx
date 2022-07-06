@@ -1,12 +1,27 @@
+import { ReactNode, useRef } from 'react';
 import styles from './hero-button.module.css';
 
-const HeroButton = ({ icon, text }) => {
+interface HeroButtonProps {
+	icon: ReactNode;
+	text: string;
+	link: string;
+}
+
+const HeroButton = ({ icon, text, link }: HeroButtonProps) => {
+
+	
+
 	return (
 		<>
-			<div className={styles.heroButton}>
+			<a
+				className={styles.heroButton}
+				href={link}
+				target='_blank'
+				rel='noreferrer noopener'
+			>
 				<div className={styles.heroButtonIcon}>{icon}</div>
 				{text}
-			</div>
+			</a>
 		</>
 	);
 };
