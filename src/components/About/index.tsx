@@ -1,10 +1,10 @@
-import styles from './styles.module.css';
+import styles from './about.module.css';
 
 const About = () => {
 	return (
 		<section className={styles.aboutSection}>
 			<section className={styles.aboutContent}>
-				<h1 className={styles.aboutTitle}>Alberto C. Álvarez</h1>
+				<h1 className={styles.aboutTitle}>Let me introduce Myself</h1>
 				<p className={styles.aboutDescription}>
 					I am currently studying computer engineering. My main goal is to train
 					myself in the world of web development and software creation. I really

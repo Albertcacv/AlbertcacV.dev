@@ -11,56 +11,51 @@
 	align-items: center;
 	width: 100%;
 	z-index: 10;
+	padding: 0 10px;
 }
 
-.contactTitle {
-	font-size: 2rem;
-	font-weight: 700;
-	margin: 0;
-	margin-top: 1em;
+.contactIntro {
+	margin-top: 2em;
+	font-family: 'Fira Sans', sans-serif;
+	letter-spacing: -1px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
 	margin-bottom: 1em;
-	max-width: 250px;
+}
+.contactTitle {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 36px;
+	margin: 0;
+	margin-bottom: 1em;
 }
 
-.contactSubtitle {
-	color: #cdcbdf;
-	font-size: 16px;
-	margin-bottom: 3em;
-	max-width: 250px;
-	margin: 3em auto;
+.contactButton {
+	background-color: black;
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Fira Sans', sans-serif;
+	line-height: 17px;
+	width: 40%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-	.contactSection {
-		height: 32%;
-	}
-	.contactContent {
-		flex-direction: row;
-		justify-content: space-between;
-	}
+.contactList {
+	margin-top: 2em;
+	padding: 0;
 }
 
-@media screen and (min-width: 1200px) {
-	.contactSection {
-		width: 98%;
-	}
-}
-
-@media screen and (max-width: 1440px) {
-	.contactContent {
-		width: 80%;
-		margin: 0 auto;
-		justify-content: space-evenly;
-	}
-	.contactSection {
-		justify-content: space-between;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.contactSection {
-		display: flex;
-		justify-content: center;
-		width: 98%;
-	}
+.contactItem {
+	list-style: none;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: 'Fira Sans', sans-serif;
+	margin-bottom: 2em;
 }
