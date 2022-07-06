@@ -1,0 +1,10 @@
+.header {
+	background: linear-gradient(125deg, #4bd5ed69, #ffccd3a6);
+	background-position: center;
+	height: 60px;
+	width: 100%;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

@@ -1,12 +1,8 @@
-import LogoSVG from '../../../assets/cropped_logo.svg';
-import styles from './styles.module.css';
+import styles from './logo.module.css';
+import LogoSVG from '/cropped_logo.svg';
 
 const Logo = () => {
-	return (
-		<div className={styles.logoContainer}>
-			<img src={LogoSVG} className={styles.img} />
-		</div>
-	);
+	return <img src={LogoSVG} className={styles.img} />;
 };
 
 export default Logo;
