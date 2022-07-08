@@ -1,6 +1,5 @@
-
 .servicesSection {
-	margin-top: 3em;
+	margin-top: 9em;
 }
 .servicesIntro {
 	font-family: 'Fira Sans', sans-serif;
@@ -22,6 +21,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	opacity: 0.5;
+	list-style: none;
 }
 .servicesTitle {
 	position: relative;
@@ -39,4 +39,17 @@
 	background-color: #303d4d;
 	left: -31px;
 	top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.servicesSection {
+		width: 63%;
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
+
+	.services {
+		margin: 0;
+	}
 }

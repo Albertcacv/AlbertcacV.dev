@@ -16,7 +16,9 @@ const ProjectCard = ({ projectInfo }: ProjectProps) => {
 	return (
 		<article className={styles.projectArticle}>
 			<section className={styles.projectImageContainer}>
-				<img src={projectInfo.image} className={styles.projectImage} />
+				<a href={projectInfo.viewLink} target='_blank' rel='noreferrer noopener'>
+					<img src={projectInfo.image} className={styles.projectImage} />
+				</a>
 			</section>
 			<section className={styles.projectInfo}>
 				<span className={styles.projectTitle}> {projectInfo.title}</span>

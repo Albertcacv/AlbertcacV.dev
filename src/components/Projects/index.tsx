@@ -13,7 +13,7 @@ type Project = {
 
 const Projects = () => {
 	return (
-		<section className={styles.projects}>
+		<section className={styles.projects} id='projects'>
 			<h2 className={styles.title}>Projects</h2>
 			<p className={styles.subtitle}>
 				I've worked on a number of projects, some of which are listed below.

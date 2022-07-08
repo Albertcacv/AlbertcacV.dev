@@ -12,17 +12,12 @@ const Hero = () => {
 				<h1 className={styles.title}>
 					<span>Alberto C.</span> <span>Álvarez</span>
 				</h1>
+				<ul className={styles.heroList}>
+					<li className={styles.heroItem}>Coder 🖥️</li>
+					<li className={styles.heroItem}>Cibersecurity 🔐</li>
+					<li className={styles.heroItem}>Powerlifting 💪</li>
+				</ul>
 			</div>
-			<ul className={styles.heroList}>
-				<li className={styles.heroItem}>Coder 🖥️</li>
-				<li className={styles.heroItem}>Cibersecurity 🔐</li>
-				<li className={styles.heroItem}>Powerlifting 💪</li>
-			</ul>
-
-			<section className={styles.heroImageContainer}>
-				<img src={Avatar} />
-			</section>
-
 			<section className={styles.heroActions}>
 				<HeroButton
 					icon={<AiOutlineArrowDown />}
@@ -34,6 +29,10 @@ const Hero = () => {
 					text='Contact Now'
 					link='https://www.linkedin.com/in/albertcacv/'
 				/>
+			</section>
+
+			<section className={styles.heroImageContainer}>
+				<img src={Avatar} />
 			</section>
 		</section>
 	);

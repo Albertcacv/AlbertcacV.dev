@@ -47,7 +47,7 @@ type Item = {
 
 const Skills = () => {
 	return (
-		<section className={styles.skillsSection}>
+		<section className={styles.skillsSection} id='skills'>
 			<span className={styles.skillsTitle}>Skills</span>
 
 			<section className={styles.skills}>

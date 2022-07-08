@@ -16,3 +16,14 @@
 	line-height: 19px;
 	color: #757384;
 }
+
+@media screen and (min-width: 768px) {
+	.projects {
+		width: 63%;
+		margin: 5em auto;
+	}
+
+	.services {
+		margin: 0;
+	}
+}

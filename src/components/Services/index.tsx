@@ -1,11 +1,8 @@
-import { useRef } from 'react';
 import styles from './services.module.css';
 
 function Services() {
-	
-
 	return (
-		<section className={styles.servicesSection}>
+		<section className={styles.servicesSection} id='services'>
 			<span className={styles.servicesIntro}>How Can i Help you?</span>
 
 			<section className={styles.services}>

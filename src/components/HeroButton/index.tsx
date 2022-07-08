@@ -9,14 +9,14 @@ interface HeroButtonProps {
 
 const HeroButton = ({ icon, text, link }: HeroButtonProps) => {
 
-	
+	console.log(link)
 
 	return (
 		<>
 			<a
 				className={styles.heroButton}
 				href={link}
-				target='_blank'
+				// target='_blank'
 				rel='noreferrer noopener'
 			>
 				<div className={styles.heroButtonIcon}>{icon}</div>
