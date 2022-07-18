@@ -1,0 +1,38 @@
+.aboutSection {
+	margin-top: 4em;
+	padding: 0 10px;
+}
+
+.section {
+	margin-bottom: 3rem;
+}
+
+.aboutTitle {
+	font-weight: var(--font-medium);
+	font-size: 25px;
+	margin: 0;
+}
+.aboutContent {
+	font-weight: var(--font-ligth);
+	font-size: 30px;
+}
+
+.aboutDescription {
+	margin-top: 1em;
+	font-size: 16px;
+	font-weight: var(--font-ligth);
+	line-height: 28px;
+}
+
+.link {
+	color: var(--black);
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+	.aboutDescription {
+		max-width: 80%;
+	}
+}
