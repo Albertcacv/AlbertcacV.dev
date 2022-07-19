@@ -1,16 +1,7 @@
 import { projectsData } from '../../data/projectsData';
+import { Project } from '../../types/Projects';
 import ProjectCard from '../ProjectCard';
 import styles from './projects.module.css';
-
-type Project = {
-	id: number;
-	title: string;
-	description: string;
-	stack: string[];
-	image: string;
-	viewLink: string;
-	codeLink: string;
-};
 
 const Projects = () => {
 	return (

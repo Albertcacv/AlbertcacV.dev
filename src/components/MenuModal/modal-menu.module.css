@@ -1,0 +1,55 @@
+.modal {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: hidden;
+	animation: showModal 2s;
+}
+
+@keyframes showModal {
+	0% {
+		opacity: 0;
+	}
+
+
+	100% {
+		opacity: 1;
+	}
+}
+.button {
+	position: absolute;
+	right: 1rem;
+	top: 10px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	background-color: azure;
+}
+
+.modalLayout > ul {
+	list-style: none;
+	padding: 0;
+}
+.modalLayout > ul > li {
+	margin-bottom: 1rem;
+}
+
+.modalLayout > ul > li:target {
+	color: var(--black);
+}
+
+.modalLayout > ul > li > a {
+	text-decoration: none;
+	color: var(--gray);
+}

@@ -37,8 +37,8 @@
 	font-weight: 900;
 	font-size: 18px;
 	line-height: 27px;
-	color: #747689;
-	margin-bottom: 1em;
+	font-weight: var(--font-medium);
+	font-size: 25px;
 }
 
 .imgMid {
@@ -62,6 +62,6 @@
 	}
 
 	.skillsList {
-		width: 30em;
+		width: 25em;
 	}
 }
