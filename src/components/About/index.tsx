@@ -1,4 +1,4 @@
-import Skills from '../Skills';
+import Skills from '../Portfolio/Skills';
 import styles from './about.module.css';
 
 const About = () => {

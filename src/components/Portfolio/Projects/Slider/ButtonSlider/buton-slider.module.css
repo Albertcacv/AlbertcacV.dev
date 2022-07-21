@@ -1,0 +1,15 @@
+.buttonSlide img {
+	width: 25px;
+	height: 25px;
+	pointer-events: none;
+}
+.prev {
+	top: 50%;
+	left: 20px;
+	transform: translateY(-60%);
+}
+.next {
+	top: 50%;
+	right: 20px;
+	transform: translateY(-60%);
+}

@@ -1,15 +1,18 @@
-import { Route, Routes } from 'react-router-dom';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import Home from './pages/Home';
+import About from './components/About';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
 
 function App() {
 	return (
-		<Routes>
-			<Route path='/' element={<Home />} />
-			<Route path='/about' element={<AboutPage />} />
-			<Route path='/contact' element={<ContactPage />} />
-		</Routes>
+		<>
+			<Home />
+			<Portfolio />
+			<About />
+			{/* 
+			<Footer /> 
+			*/}
+		</>
 	);
 }
 

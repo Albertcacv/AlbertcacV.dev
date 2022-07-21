@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { CgMenuGridO } from 'react-icons/cg';
 import { RiCloseLine } from 'react-icons/ri';
-import { Link } from 'react-router-dom';
-import ModalMenu from '../MenuModal';
+
+import ModalMenu from '../../MenuModal';
 import styles from './header.module.css';
 import Avatar from '/avatar.jpg';
 
@@ -20,17 +20,13 @@ const Header = () => {
 			<header className={styles.header}>
 				<div className={styles.headerLeft}>
 					<img src={Avatar} alt='avatar image' className={styles.avatar} />
-					<div className={styles.info}>
-						<span className={styles.title}>Alberto C. Álvarez</span>
-						<span className={styles.subtitle}>FullStack developer</span>
-					</div>
 				</div>
 				<div className={styles.headerRigth}>
 					<button className={styles.button} onClick={() => setShowMenu(!showMenu)}>
-						{showMenu ? <RiCloseLine size={'1.3rem'} /> : <CgMenuGridO size={'1.3rem'} />}
+						{showMenu ? <RiCloseLine size={'1.3rem'} color='#FFF' /> : <CgMenuGridO size={'1.3rem'} color='#FFF' />}
 					</button>
 					<nav className={styles.nav}>
-						<ul>
+						{/* <ul>
 							<Link to='/' className={pathname === '/' ? `${styles.active} ${styles.link}` : styles.link}>
 								My works
 							</Link>
@@ -44,7 +40,7 @@ const Header = () => {
 							<Link to='/contact' className={pathname === '/contact' ? `${styles.active} ${styles.link}` : styles.link}>
 								Contact
 							</Link>
-						</ul>
+						</ul> */}
 					</nav>
 				</div>
 			</header>
