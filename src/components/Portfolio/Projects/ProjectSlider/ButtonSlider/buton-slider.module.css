@@ -1,7 +1,11 @@
-.buttonSlide img {
-	width: 25px;
-	height: 25px;
+.buttonSlide {
+	position: absolute;
+	width: 35px;
+	height: 35px;
 	pointer-events: none;
+
+	background: var(--orange);
+	border-radius: 50%;
 }
 .prev {
 	top: 50%;
@@ -12,4 +16,8 @@
 	top: 50%;
 	right: 20px;
 	transform: translateY(-60%);
+}
+
+.image {
+	max-width: 100%;
 }

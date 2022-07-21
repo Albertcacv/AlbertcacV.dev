@@ -1,20 +1,13 @@
-.aboutSection {
-	margin-top: 4em;
+.about {
+	background: var(--black);
 	padding: 0 10px;
+	color: var(--text);
 }
 
-.section {
-	margin-bottom: 3rem;
-}
-
-.aboutTitle {
-	font-weight: var(--font-medium);
-	font-size: 25px;
-	margin: 0;
-}
 .aboutContent {
-	font-weight: var(--font-ligth);
-	font-size: 30px;
+	background: var(--gray);
+	border-radius: 15px;
+	padding-top: 1rem;
 }
 
 .aboutDescription {
@@ -29,12 +22,4 @@
 	text-decoration: none;
 	font-style: italic;
 	font-weight: bold;
-}
-
-@media only screen and (min-width: 600px) {
-}
-@media screen and (min-width: 1200px) {
-	.aboutSection {
-		max-width: 1040px;
-	}
 }

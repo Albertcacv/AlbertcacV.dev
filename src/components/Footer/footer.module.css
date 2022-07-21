@@ -1,0 +1,10 @@
+.footer {
+	background: var(--gray);
+	font-family: 'Arodora-ligth';
+	font-size: 1rem;
+	color: var(--text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  padding: 10px;
+}

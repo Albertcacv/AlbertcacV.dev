@@ -8,10 +8,9 @@ function App() {
 		<>
 			<Home />
 			<Portfolio />
-			<About />
-			{/* 
-			<Footer /> 
-			*/}
+			{/* <About />
+
+			<Footer /> */}
 		</>
 	);
 }

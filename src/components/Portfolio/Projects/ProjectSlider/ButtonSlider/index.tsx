@@ -10,9 +10,16 @@ const ButtonSlider = ({ direction, moveSlide }: ButtonSliderProps) => {
 	return (
 		<button
 			onClick={moveSlide}
-			className={direction === 'next' ? `${styles.buttonSlide} ${styles.next}` : `${styles.buttonSlide} ${styles.prev}`}
+			className={
+				direction === 'next'
+					? `${styles.buttonSlide} ${styles.next}`
+					: `${styles.buttonSlide} ${styles.prev}`
+			}
 		>
-			<img src={direction === 'next' ? rightArrow : leftArrow} />
+			<img
+				src={direction === 'next' ? rightArrow : leftArrow}
+				className={styles.image}
+			/>
 		</button>
 	);
 };

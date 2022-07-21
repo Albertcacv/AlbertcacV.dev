@@ -1,10 +1,10 @@
 import styles from './projects.module.css';
-import Slider from './Slider';
+import ProjectSlider from './ProjectSlider';
 
 const Projects = () => {
 	return (
 		<section className={styles.projects}>
-			<Slider />
+			<ProjectSlider />
 		</section>
 	);
 };
