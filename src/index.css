@@ -17,9 +17,9 @@ code {
 
 :root {
 	--text: #e4e4e4;
-	--gray: linear-gradient(#414141, #2d2d2d);
-	--black: linear-gradient(#2c2c2c, #1c1c1c);
-	--orange: linear-gradient(#e2a300, #e29500);
+	--gray: linear-gradient(to right, #414141, #2d2d2d);
+	--black: linear-gradient(to right, #2c2c2c, #1c1c1c);
+	--orange: linear-gradient(to right, #e2a300, #e29500);
 	--blue: #00c4f0;
 }
 
@@ -38,12 +38,4 @@ code {
 @font-face {
 	font-family: 'Next semibold';
 	src: url('./assets/fonts/Next-semibold.otf') format('truetype');
-}
-
-.slick-slider {
-	height: 100%;
-}
-
-.slick-arrow::before {
-	font-size: 2rem;
 }

@@ -1,6 +1,6 @@
-import { SKILLS } from '../../../data/skills';
-import { Skill as SkillType } from '../../../types/Skill';
-import Skill from './Skill';
+import { SKILLS } from '../../data/skills';
+import { Skill as SkillType } from '../../types/Skill';
+import Skill from '../Skill';
 import styles from './skills.module.css';
 
 const Skills = () => {

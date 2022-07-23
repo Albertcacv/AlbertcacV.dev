@@ -1,0 +1,37 @@
+.card {
+	display: flex;
+	align-items: center;
+	background: var(--black);
+	border-radius: 15px;
+	padding: 10px;
+	color: var(--text);
+	gap: 1rem;
+}
+
+.cardImage {
+	width: 50%;
+	border-radius: 15px;
+}
+
+.cardInfo {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-family: 'Next bold', sans-serif;
+	font-size: 24px;
+	margin: 0;
+}
+
+.description {
+	font-family: 'Arodora ligth';
+	line-height: 1.5rem;
+}

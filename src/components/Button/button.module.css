@@ -11,5 +11,5 @@
 	padding: 10px;
 	width: 8rem;
 	border-radius: 5px;
-	outline: var(--orange);
+	box-shadow: 0 0 10px orange;
 }

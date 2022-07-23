@@ -1,0 +1,37 @@
+.hero {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.title {
+	font-family: 'Next bold', sans-serif;
+	font-size: 52px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	font-family: 'Next semibold';
+	font-size: 24px;
+	color: gray;
+}
+
+.description {
+	font-family: 'Arodora ligth';
+	line-height: 1.5rem;
+	margin-top: 2rem;
+}
+
+.image {
+	width: 25rem;
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 1200px) {
+	.hero {
+		max-width: 980px;
+	}
+	.subtitle {
+		font-size: 16px;
+	}
+}

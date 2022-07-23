@@ -1,12 +1,10 @@
-import Button from '../Button';
 import styles from './about.module.css';
 
 const About = () => {
 	return (
 		<section className={styles.about} id='about'>
-			<section className={styles.aboutContent}>
-				<article>
-					<h3 className={styles.aboutTitle}>Let me introduce Myself</h3>
+			<span className={styles.aboutTitle}>Let me introduce Myself</span>
+			{/* <article>
 					<p className={styles.aboutDescription}>
 						I am currently studying computer engineering. My main goal is to
 						train myself in the world of web development and software creation.
@@ -18,7 +16,7 @@ const About = () => {
 						url='https://www.linkedin.com/in/albertcacv/'
 					/>
 				</article>
-			</section>
+			*/}
 		</section>
 	);
 };

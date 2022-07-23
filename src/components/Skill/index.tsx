@@ -1,4 +1,4 @@
-import { Skill as SkillType } from '../../../../types/Skill';
+import { Skill as SkillType } from '../../types/Skill';
 import styles from './skill.module.css';
 
 const Skill = ({ id, icon, iconName }: SkillType) => {
