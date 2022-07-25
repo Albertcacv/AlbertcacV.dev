@@ -4,7 +4,7 @@ const Navbar = () => {
 		<nav className={styles.nav}>
 			<ul className={styles.list}>
 				<li className={styles.item}>
-					<a href='#home' className={styles.link}>
+					<a href='#portfolio' className={styles.link}>
 						My works
 					</a>
 				</li>

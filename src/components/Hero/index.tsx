@@ -4,20 +4,20 @@ import styles from './hero.module.css';
 import ProfilePic from '/profile.png';
 const Hero = () => {
 	return (
-		<section className={styles.hero}>
+		<section className={styles.hero} id='contact'>
 			<div className={styles.intro}>
 				<h1 className={styles.title}>I'M ALBERTO C. ÁLVAREZ</h1>
 				<span className={styles.subtitle}>Full Stack Developer</span>
 				<p className={styles.description}>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-					repudiandae expedita officiis obcaecati dignissimos fugit, quod odio
-					quo, esse dolorem nostrum voluptatem reprehenderit, maiores aspernatur
-					reiciendis aut numquam earum alias.
+					Think of the design and I'll bring it to life
 				</p>
-				<Button
-					text='CONTACT ME'
-					url='https://www.linkedin.com/in/albertcacv/'
-				/>
+				<div className={styles.buttons}>
+					<Button
+						text='CONTACT ME'
+						url='https://www.linkedin.com/in/albertcacv/'
+					/>
+					<Button text='DOWNLOAD CV' url='/pdf/CV.pdf' download={true} />
+				</div>
 			</div>
 			<img src={ProfilePic} alt='' className={styles.image} />
 		</section>

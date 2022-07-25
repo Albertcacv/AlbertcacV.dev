@@ -1,20 +1,23 @@
 .about {
 	background: var(--black);
-	padding: 0 10px;
+	padding: 10px;
 	color: var(--text);
+	display: flex;
+	justify-content: center;
 }
 
 .aboutContent {
 	background: var(--gray);
 	border-radius: 15px;
-	padding-top: 1rem;
+	margin-top: 2rem;
+	width: 80%;
+	padding: 20px;
 }
 
 .aboutDescription {
-	margin-top: 1em;
-	font-size: 16px;
-	font-weight: var(--font-ligth);
-	line-height: 28px;
+	font-family: 'Arodora ligth';
+	text-transform: unset;
+	line-height: 25px;
 }
 
 .link {
@@ -22,4 +25,19 @@
 	text-decoration: none;
 	font-style: italic;
 	font-weight: bold;
+}
+
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+	.aboutContent {
+		max-width: 380px;
+		line-height: 1.7rem;
+		padding: 20px;
+		margin: 5rem;
+	}
 }

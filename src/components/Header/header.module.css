@@ -3,7 +3,7 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 5px;
 	background: var(--black);
 	color: var(--text);
 }
@@ -11,6 +11,7 @@
 .headerContent {
 	width: 100%;
 	height: 100%;
+	padding: 0 10px 0 5px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -21,26 +22,7 @@
 	border-radius: 50%;
 }
 
-.headerLeft {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
 
-.info {
-	display: flex;
-	flex-direction: column;
-}
-
-.title {
-	font-weight: bold;
-	font-size: 15px;
-}
-
-.subtitle {
-	font-weight: var(--font-medium);
-	font-size: 10px;
-}
 
 .button {
 	border-radius: 50%;

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { CgMenuGridO } from 'react-icons/cg';
 import { RiCloseLine } from 'react-icons/ri';
 
-import ModalMenu from '../MenuModal';
 import Navbar from '../Navbar';
 import styles from './header.module.css';
 import Logo from '/logo.png';
@@ -14,9 +13,7 @@ const Header = () => {
 		<>
 			<header className={styles.header}>
 				<div className={styles.headerContent}>
-					<div className={styles.headerLeft}>
-						<img src={Logo} alt='avatar image' className={styles.avatar} />
-					</div>
+					<img src={Logo} alt='avatar image' className={styles.avatar} />
 					<div className={styles.headerRigth}>
 						<button
 							className={styles.button}
@@ -32,9 +29,11 @@ const Header = () => {
 					</div>
 				</div>
 			</header>
-			{showMenu ? <ModalMenu isShowing={showMenu} close={setShowMenu} /> : null}
+			{/* {showMenu ? <ModalMenu isShowing={showMenu} close={setShowMenu} /> : null} */}
 		</>
 	);
 };
 
 export default Header;
+
+//TODO: redesign modal window
