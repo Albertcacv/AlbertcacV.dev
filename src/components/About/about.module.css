@@ -7,6 +7,7 @@
 }
 
 .aboutContent {
+	max-width: 1200px;
 	background: var(--gray);
 	border-radius: 15px;
 	margin-top: 2rem;
@@ -18,6 +19,7 @@
 	font-family: 'Arodora ligth';
 	text-transform: unset;
 	line-height: 25px;
+	font-size: 18px;
 }
 
 .link {
@@ -35,7 +37,7 @@
 
 @media screen and (min-width: 1200px) {
 	.aboutContent {
-		max-width: 380px;
+	
 		line-height: 1.7rem;
 		padding: 20px;
 		margin: 5rem;

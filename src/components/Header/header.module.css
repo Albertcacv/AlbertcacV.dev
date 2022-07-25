@@ -1,28 +1,26 @@
 .header {
+	background: var(--black);
+	height: 60px;
+	color: var(--text);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
 	padding-top: 5px;
-	background: var(--black);
-	color: var(--text);
 }
 
 .headerContent {
-	width: 100%;
-	height: 100%;
-	padding: 0 10px 0 5px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
+	padding: 0 5px 0 10px;
+	max-width: 1200px;
 }
 
-.avatar {
-	width: 5rem;
-	border-radius: 50%;
+.logo {
+	width: 50px;
+	height: 50px;
 }
-
-
 
 .button {
 	border-radius: 50%;
@@ -39,14 +37,5 @@
 	.nav {
 		display: flex;
 		justify-content: center;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.headerContent {
-		max-width: 980px;
-	}
-	.subtitle {
-		font-size: 16px;
 	}
 }

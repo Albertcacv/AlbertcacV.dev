@@ -5,30 +5,40 @@
 	flex-direction: column;
 	align-items: center;
 	color: var(--text);
-	padding: 20px 10px;
 	gap: 1rem;
-
+	padding: 10px;
+	width: 100%;
+	position: relative;
+	max-height: max-content;
 }
 
-.cardImage {
-	display: block;
-	height: 220px;
-	width: 220px;
+.imageContainer {
+	width: 100%;
+	height: 24rem;
+	overflow: hidden;
 	border-radius: 15px;
 
+	display: flex;
+	justify-content: center;
+}
+.cardImage {
+	max-width: 100%;
+	height: 100%;
+	border-radius: 15px;
 }
 
 .cardInfo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 }
 
 .buttons {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	padding-bottom: 10px;
 }
 
 .title {
@@ -40,42 +50,4 @@
 .description {
 	font-family: 'Arodora ligth';
 	line-height: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-	.card {
-		display: flex;
-		align-items: center;
-		background: var(--black);
-		border-radius: 15px;
-		padding: 10px;
-		color: var(--text);
-		gap: 1rem;
-	}
-	.cardImage {
-		width: 50%;
-		border-radius: 15px;
-	}
-	.cardInfo {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.buttons {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.title {
-		font-family: 'Next bold', sans-serif;
-		font-size: 24px;
-		margin: 0;
-	}
-
-	.description {
-		font-family: 'Arodora ligth';
-		line-height: 1.5rem;
-	}
 }

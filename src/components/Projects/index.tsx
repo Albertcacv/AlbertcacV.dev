@@ -7,12 +7,21 @@ const Projects = () => {
 		<>
 			<section className={styles.projects}>
 				{projectsData.map(
-					({ id, title, description, image, viewLink, codeLink }) => (
+					({
+						id,
+						title,
+						description,
+						image,
+						verticalImage,
+						viewLink,
+						codeLink,
+					}) => (
 						<ProjectCard
 							id={id}
 							title={title}
 							description={description}
 							image={image}
+							verticalImage={verticalImage}
 							viewLink={viewLink}
 							codeLink={codeLink}
 						/>

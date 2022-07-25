@@ -2,18 +2,21 @@ export const projectsData = [
 	{
 		id: 1,
 		title: 'Gym website template',
-		description: 'Landing of a gym platform created with React framework',
+		description:
+			'Landing of "THE FIT CLUB" gym where you can look for routines or exercises to shape and build your ideal body',
 		image: '/gym-preview.png',
+		verticalImage: '/gym-vertical-preview.png',
 		viewLink: 'https://gym-website-xi.vercel.app/',
-		codeLink: 'https://github.com/Albertcacv/RickMorty_Api',
+		codeLink: 'https://github.com/Albertcacv/gym-website',
 	},
 	{
 		id: 2,
 		title: 'Roomy',
-		description: 'Real estate application for property search',
+		description: 'Real state application for property search',
 		image: '/roomy-preview.png',
-		viewLink: 'https://gym-website-xi.vercel.app/',
-		codeLink: 'https://github.com/Albertcacv/RickMorty_Api',
+		verticalImage: '/roomy-vertical-preview.png',
+		viewLink: 'https://roomy.vercel.app/',
+		codeLink: 'https://github.com/Albertcacv/roomy',
 	},
 ];
 

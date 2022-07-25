@@ -2,61 +2,58 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1.5rem;
 	padding: 0 20px;
+	gap: 1.5rem;
+	max-width: 1200px;
 }
 .intro {
 	order: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
 }
 .image {
 	order: 1;
 }
 
+.image {
+	width: 15em;
+	background-color: rgba(68, 66, 66, 0.192);
+	border-radius: 20%;
+}
 .title {
-	font-family: 'Next bold', sans-serif;
-	font-size: 52px;
 	margin: 0;
-	margin-bottom: 10px;
+	font-family: 'Next bold', sans-serif;
+	font-size: 32px;
 }
 
 .subtitle {
 	font-family: 'Next semibold';
-	font-size: 24px;
+	font-size: 18px;
 	color: gray;
 }
 
 .description {
-	font-family: 'Arodora ligth';
 	line-height: 2rem;
-
-	font-size: 24px;
-}
-
-.image {
-	width: 12rem;
-	border-radius: 50%;
+	font-size: 22px;
+	margin-top: 10px;
 }
 
 .buttons {
 	display: flex;
+	justify-content: space-between;
 	gap: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
 	.hero {
+		padding-top: 20px;
 		flex-direction: row;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.hero {
-		max-width: 980px;
-	}
-	.subtitle {
-		font-size: 16px;
+		gap: 5rem;
 	}
 
-	.description {
-		max-width: 500px;
+	.buttons {
+		justify-content: space-around;
 	}
 }

@@ -1,4 +1,3 @@
-import { RiCloseLine } from 'react-icons/ri';
 import styles from './modal-menu.module.css';
 type Modal = {
 	isShowing: boolean;
@@ -16,18 +15,15 @@ const ModalMenu = ({ isShowing, close }: ModalMenuProps) => {
 	return (
 		<div className={styles.modal}>
 			<div className={styles.modalLayout}>
-				<button onClick={toggleMenu} className={styles.button}>
-					<RiCloseLine size={'1.3rem'} />
-				</button>
 				<ul>
 					<li onClick={toggleMenu}>
-						<a href='/'>My works</a>
+						<a href='#portfolio'>My works</a>
 					</li>
 					<li onClick={toggleMenu}>
-						<a href='/about'>About me</a>
+						<a href='#about'>About me</a>
 					</li>
 					<li onClick={toggleMenu}>
-						<a href='/contact'>Contact</a>
+						<a href='#contact'>Contact</a>
 					</li>
 				</ul>
 			</div>
