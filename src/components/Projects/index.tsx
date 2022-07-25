@@ -1,31 +1,38 @@
 import { projectsData } from '../../data/projectsData';
+import Button from '../Button';
 import ProjectCard from '../ProjectCard';
 import styles from './projects.module.css';
-
-type Project = {
-	id: number;
-	title: string;
-	description: string;
-	image: string;
-	viewLink: string;
-	codeLink: string;
-};
-
 const Projects = () => {
 	return (
-		<section className={styles.projects} id='projects'>
-			<h2 className={styles.title}>Projects</h2>
-			<p className={styles.subtitle}>
-				I've worked on a number of projects, some of which are listed below.
-			</p>
-			{projectsData.length > 0 ? (
-				projectsData.map((project: Project) => (
-					<ProjectCard key={project.id} projectInfo={project} />
-				))
-			) : (
-				<span>SOON...</span>
-			)}
-		</section>
+		<>
+			<section className={styles.projects}>
+				{projectsData.map(
+					({
+						id,
+						title,
+						description,
+						image,
+						verticalImage,
+						viewLink,
+						codeLink,
+					}) => (
+						<ProjectCard
+							id={id}
+							title={title}
+							description={description}
+							image={image}
+							verticalImage={verticalImage}
+							viewLink={viewLink}
+							codeLink={codeLink}
+						/>
+					)
+				)}
+			</section>
+			<Button
+				text='View more'
+				url='https://github.com/Albertcacv?tab=repositories'
+			/>
+		</>
 	);
 };
 

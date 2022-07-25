@@ -1,39 +1,25 @@
-import HeroButton from '../HeroButton';
+import Button from '../Button';
 import styles from './hero.module.css';
 
-import { AiOutlineArrowDown } from 'react-icons/ai';
-import { BiEnvelope } from 'react-icons/bi';
-import Avatar from '/avatar.svg';
+import ProfilePic from '/profile.png';
 const Hero = () => {
 	return (
-		<section className={styles.hero}>
-			<div className={styles.heroInfo}>
-				<span className={styles.subtitle}>hey, i am</span>
-				<h1 className={styles.title}>
-					<span>Alberto C.</span> <span>Álvarez</span>
-				</h1>
-				<ul className={styles.heroList}>
-					<li className={styles.heroItem}>Coder 🖥️</li>
-					<li className={styles.heroItem}>Cibersecurity 🔐</li>
-					<li className={styles.heroItem}>Powerlifting 💪</li>
-				</ul>
+		<section className={styles.hero} id='contact'>
+			<div className={styles.intro}>
+				<h1 className={styles.title}>I'M ALBERTO C. ÁLVAREZ</h1>
+				<span className={styles.subtitle}>Full Stack Developer</span>
+				<p className={styles.description}>
+					Think of the design and I'll bring it to life
+				</p>
+				<div className={styles.buttons}>
+					<Button
+						text='CONTACT ME'
+						url='https://www.linkedin.com/in/albertcacv/'
+					/>
+					<Button text='DOWNLOAD CV' url='/pdf/CV.pdf' download={true} />
+				</div>
 			</div>
-			<section className={styles.heroActions}>
-				<HeroButton
-					icon={<AiOutlineArrowDown />}
-					text='Explore more'
-					link='#services'
-				/>
-				<HeroButton
-					icon={<BiEnvelope />}
-					text='Contact Now'
-					link='https://www.linkedin.com/in/albertcacv/'
-				/>
-			</section>
-
-			<section className={styles.heroImageContainer}>
-				<img src={Avatar} />
-			</section>
+			<img src={ProfilePic} alt='' className={styles.image} />
 		</section>
 	);
 };

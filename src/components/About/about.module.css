@@ -1,19 +1,45 @@
-.aboutSection {
-	margin-top: 6em;
-	padding: 0 10px;
+.about {
+	background: var(--black);
+	padding: 10px;
+	color: var(--text);
+	display: flex;
+	justify-content: center;
 }
 
 .aboutContent {
-	font-family: 'Fira Sans';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 30px;
-	line-height: 36px;
+	max-width: 1200px;
+	background: var(--gray);
+	border-radius: 15px;
+	margin-top: 2rem;
+	width: 80%;
+	padding: 20px;
 }
 
 .aboutDescription {
-	margin-top: 1em;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 28px;
+	font-family: 'Arodora ligth';
+	text-transform: unset;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+.link {
+	color: var(--black);
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+	.aboutContent {
+	
+		line-height: 1.7rem;
+		padding: 20px;
+		margin: 5rem;
+	}
 }
