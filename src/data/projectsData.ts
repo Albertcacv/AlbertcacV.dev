@@ -18,6 +18,16 @@ export const projectsData = [
 		viewLink: 'https://roomy.vercel.app/',
 		codeLink: 'https://github.com/Albertcacv/roomy',
 	},
+	{
+		id: 3,
+		title: 'DevChallenges',
+		description:
+			'Web where you can see all the projects of the devchallanges website, from html, css and js to frameworks like React.',
+		image: '/devchallenges-preview.png',
+		verticalImage: '/devchallenges-vertical-preview.png',
+		viewLink: 'https://albertcacv.github.io/devchallenges/',
+		codeLink: 'https://github.com/Albertcacv/devchallenges',
+	},
 ];
 
 //TODO: add uuid dependancy for id's
