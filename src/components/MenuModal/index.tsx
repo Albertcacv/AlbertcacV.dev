@@ -1,8 +1,5 @@
 import styles from './modal-menu.module.css';
-type Modal = {
-	isShowing: boolean;
-	close: void;
-};
+
 
 interface ModalMenuProps {
 	isShowing: boolean;

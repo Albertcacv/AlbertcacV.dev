@@ -1,3 +1,9 @@
+export type Skill = {
+	id: number;
+	iconName: string;
+	icon: string;
+};
+
 export type Project = {
 	id: number;
 	title: string;

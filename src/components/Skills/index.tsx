@@ -1,5 +1,5 @@
 import { SKILLS } from '../../data/skills';
-import { Skill as SkillType } from '../../types/Skill';
+import type { Skill as SkillType } from '../../types';
 import Skill from '../Skill';
 import styles from './skills.module.css';
 

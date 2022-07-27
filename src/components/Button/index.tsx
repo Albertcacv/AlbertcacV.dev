@@ -6,7 +6,6 @@ interface ButtonProps {
 	download?: boolean;
 }
 const Button = ({ text, url, download }: ButtonProps) => {
-	console.log(download);
 	return (
 		<a
 			href={url}
