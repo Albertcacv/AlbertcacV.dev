@@ -1,45 +1,67 @@
 .about {
-	background: var(--black);
 	padding: 10px;
-	color: var(--text);
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	margin: 0;
+	font-size: 50px;
+	line-height: 68px;
+	background: var(--title);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: 900;
 }
 
 .aboutContent {
 	max-width: 1200px;
 	background: var(--gray);
 	border-radius: 15px;
-	margin-top: 2rem;
 	width: 80%;
-	padding: 20px;
+	margin-top: 1rem;
+}
+.aboutTitle {
+	font-weight: 600;
+	color: var(--about-title);
 }
 
 .aboutDescription {
-	font-family: 'Arodora ligth';
-	text-transform: unset;
-	line-height: 25px;
-	font-size: 18px;
+	color: var(--about-text);
 }
 
-.link {
-	color: var(--black);
-	text-decoration: none;
-	font-style: italic;
-	font-weight: bold;
-}
-
-.button {
+.buttons {
+	margin-top: 2rem;
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--about-text);
+	font-weight: 600;
 }
 
-@media screen and (min-width: 1200px) {
-	.aboutContent {
-	
-		line-height: 1.7rem;
-		padding: 20px;
-		margin: 5rem;
+.buttonContainer {
+	width: 100%;
+	text-align: center;
+}
+.button {
+	border-radius: 10px;
+	background: var(--background-button);
+	border: 0;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 8px;
+}
+
+@media screen and (min-width: 600px) {
+	.buttonContainer {
+		width: inherit;
+	}
+
+	.buttons {
+		flex-direction: row;
+		justify-content: space-around;
 	}
 }

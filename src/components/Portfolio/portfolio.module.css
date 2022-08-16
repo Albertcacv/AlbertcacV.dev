@@ -1,7 +1,0 @@
-.portfolio {
-	background: var(--gray);
-	padding: 40px 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}

@@ -1,11 +1,12 @@
 import { projectsData } from '../../data/projectsData';
-import Button from '../Button';
 import ProjectCard from '../ProjectCard';
 import styles from './projects.module.css';
 const Projects = () => {
 	return (
 		<>
 			<section className={styles.projects}>
+				<span className={styles.title}>Projects.</span>
+				<span className={styles.subtitle}>Visit my last projects</span>
 				{projectsData.map(
 					({
 						id,
@@ -27,11 +28,17 @@ const Projects = () => {
 						/>
 					)
 				)}
+				<span className={styles.viewMore}>
+					See all projects on{' '}
+					<a
+						href='https://github.com/Albertcacv?tab=repositories'
+						title='github link'
+						rel='noreferrer noopener'
+					>
+						github
+					</a>{' '}
+				</span>
 			</section>
-			<Button
-				text='View more'
-				url='https://github.com/Albertcacv?tab=repositories'
-			/>
 		</>
 	);
 };

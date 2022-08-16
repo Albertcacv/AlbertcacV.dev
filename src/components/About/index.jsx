@@ -1,10 +1,14 @@
-import Button from '../Button';
+import { FcDocument } from 'react-icons/fc';
 import styles from './about.module.css';
 
 const About = () => {
 	return (
 		<section className={styles.about} id='about'>
+			<h2 className={styles.title}>About.</h2>
+			<span className={styles.subtitle}>A little bit about me</span>
+
 			<div className={styles.aboutContent}>
+				<span className={styles.aboutTitle}>✋ Alberto Caño Álvarez </span>
 				<p className={styles.aboutDescription}>
 					Hey! You already know my name and my occupation, so I'll tell you a
 					little bit about me.
@@ -27,11 +31,19 @@ const About = () => {
 					services services, please click on the button below and I will be
 					happy to talk to you.
 				</p>
-				<div className={styles.button}>
-					<Button
-						text="LET'S TALK"
-						url='https://www.linkedin.com/in/albertcacv/'
-					/>
+				<div className={styles.buttons}>
+					<div className={styles.buttonContainer}>
+						<button className={styles.button}>
+							<FcDocument size={'1.2rem'} width={'100%'} />
+						</button>
+						<span>{` <- `}Download CV</span>
+					</div>
+					<div className={styles.buttonContainer}>
+						<span>Contact me {` -> `}</span>
+						<button className={styles.button}>
+							<FcDocument size={'1.2rem'} width={'100%'} />
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
