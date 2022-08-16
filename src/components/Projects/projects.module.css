@@ -1,11 +1,30 @@
 .projects {
 	width: 100%;
-	margin-top: 2rem;
-	display: grid;
-	gap: 2rem;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	margin-bottom: 1rem;
-	max-width: 1200px;
+	color: var(--text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
 }
 
+.title {
+	margin: 0;
+	font-size: 50px;
+	line-height: 68px;
+	background: var(--title);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: 900;
+}
 
+.subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 2rem;
+}
+
+.viewMore {
+	margin-top: 3rem;
+}
