@@ -1,6 +1,7 @@
 import { FcDocument } from 'react-icons/fc';
+import { TiSocialLinkedin } from 'react-icons/ti';
 import styles from './about.module.css';
-
+import CvFile from '/pdf/CV.pdf';
 const About = () => {
 	return (
 		<section className={styles.about} id='about'>
@@ -33,16 +34,19 @@ const About = () => {
 				</p>
 				<div className={styles.buttons}>
 					<div className={styles.buttonContainer}>
-						<button className={styles.button}>
+						<a className={styles.button} href={CvFile} download>
 							<FcDocument size={'1.2rem'} width={'100%'} />
-						</button>
+						</a>
 						<span>{` <- `}Download CV</span>
 					</div>
 					<div className={styles.buttonContainer}>
 						<span>Contact me {` -> `}</span>
-						<button className={styles.button}>
-							<FcDocument size={'1.2rem'} width={'100%'} />
-						</button>
+						<a
+							className={styles.button}
+							href='https://www.linkedin.com/in/albertcacv/'
+						>
+							<TiSocialLinkedin size={'1.5rem'} width={'100%'} />
+						</a>
 					</div>
 				</div>
 			</div>

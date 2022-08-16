@@ -53,15 +53,23 @@
 	border: 0;
 	padding: 10px;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 8px;
+	text-align: center;
+	color: #fff;
 }
 
 @media screen and (min-width: 600px) {
 	.buttonContainer {
 		width: inherit;
+		display: flex;
+		align-items: center;
+
+		gap: 1rem;
+		text-align: center;
 	}
 
 	.buttons {
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
+		gap: 14rem;
 	}
 }
