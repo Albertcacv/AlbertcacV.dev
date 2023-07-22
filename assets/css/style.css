@@ -1,0 +1,147 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+}
+:root {
+	--white: #ffffff;
+	--ligth-color: #f5f5f5;
+	--low-priority: #848191;
+	--primary-color: #7562e0;
+	--secondary-color: #282162;
+	--dark-color: #000036;
+	--font-weigth-medium: 500;
+	--font-size-medium: 32px;
+	--font-weigth-semibold: 600;
+	--font-size-semibold: 52px;
+	--font-size-regular: 18px;
+}
+
+body {
+	font-family: 'Poppins';
+	margin: 0;
+}
+.header,
+.hero,
+.about,
+.stack {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.hero,
+.about,
+.stack {
+	background-color: #1a1a29;
+}
+
+.header {
+	background-color: #181824;
+	height: 4rem;
+}
+
+.content {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.row-content {
+	flex-direction: column;
+}
+.header__icon {
+	color: var(--primary-color);
+	font-weight: var(--font-weigth-semibold);
+	font-size: var(--font-size-medium);
+}
+
+/* HERO */
+
+.hero-info {
+	max-width: 600px;
+}
+.hero-info__subtitle {
+	color: var(--white);
+	font-size: var(--font-size-semibold);
+	font-weight: var(--font-weigth-medium);
+}
+
+.hero-info__title {
+	margin: 0;
+	color: var(--ligth-color);
+	font-size: var(--font-size-semibold);
+	font-weight: var(--font-weigth-semibold);
+}
+
+.hero-info__paragraph {
+	margin: 0;
+	color: var(--white);
+	font-weight: var(--font-weigth-medium);
+	font-size: var(--font-size-regular);
+}
+
+.hero-buttons {
+	margin-top: 2rem;
+	display: flex;
+}
+.hero__about,
+.hero__projects {
+	color: var(--white);
+	border-radius: 8px;
+	padding: 12px 25px;
+	font-size: 16px;
+	font-weight: var(--font-weigth-semibold);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__about {
+	background-color: var(--primary-color);
+	border: none;
+}
+
+.hero__projects {
+	background-color: transparent;
+	margin-left: 1.5rem;
+	border-color: var(--primary-color);
+}
+
+.circle {
+	width: 444px;
+	height: 444px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+}
+
+.separator {
+	background-color: #181824;
+	height: 5rem;
+}
+
+/* ABOUT */
+.about__title,
+.stack__title {
+	margin: 0;
+	color: var(--primary-color);
+	width: 100%;
+}
+
+.about__description {
+	font-weight: var(--font-weigth-medium);
+	font-size: var(--font-size-regular);
+	color: var(--white);
+	width: 100%;
+}
+
+/* STACK */
+.stack {
+	padding-top: 4rem;
+}
