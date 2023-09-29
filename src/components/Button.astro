@@ -1,0 +1,31 @@
+---
+const { title, type, href } = Astro.props;
+---
+
+<a href={href} target='_blank' class=`button ${type}`>
+	{title}
+</a>
+
+<style>
+	.button {
+		height: 40px;
+		width: 170px;
+		padding: 10px;
+		border-radius: 20px;
+		border: 0;
+		font-weight: bold;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.primary {
+		background-color: var(--white-primary);
+	}
+
+	.secondary {
+		background-color: var(--black-primary);
+		border: 1px solid var(--white-primary);
+		color: var(--white-primary);
+	}
+</style>

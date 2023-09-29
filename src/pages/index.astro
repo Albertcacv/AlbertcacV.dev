@@ -1,51 +1,82 @@
 ---
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='AlbertcacV'>
 	<main>
 		<div class='logo-container'></div>
-		<div>
+		<div class='hero-container'>
 			<h1 class='text-gradient hero-title'>Hello, I'm Alberto,</h1>
-			<span class='hero-subtitle'>IT engineer based in Spain.</span>
+			<h2 class='hero-subtitle'>IT engineer based in Spain.</h2>
 			<p class='hero-description'>
 				Software engineer | Front-end development | Back-end development
 			</p>
+			<div class='buttons-container'>
+				<Button
+					href='https://www.linkedin.com/in/albertcacv/'
+					title='GET IN TOUCH'
+					type='primary'
+				/>
+				<Button title='VIEW ALL WORKS' type='secondary' />
+			</div>
 		</div>
 	</main>
+	<section class='projects'>
+		<h2 class='text-gradient'>Selected Projects</h2>
+		<div class='selected-project'></div>
+	</section>
+
+	<section class='tools'>
+		<h2 class='text-gradient'>Tech Stack</h2>
+		<div class='tools-container'>
+			<Card title='REACT' href='/react.svg' />
+			<Card title='JAVASCRIPT' href='/javascript.svg' />
+			<Card title='NEXTJS' href='/nextjs.png' />
+			<Card title='NODEJS' href='/nodejs.svg' />
+		</div>
+	</section>
+	<section class='together'>
+		<a
+			href='https://www.linkedin.com/in/albertcacv/'
+			target='_blank'
+			class='text-gradient together'
+		>
+			Let's work together &nearr;</a
+		>
+	</section>
 </Layout>
 
 <style>
+	main,
+	.logo-container,
+	.hero-container,
+	.buttons-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
-		display: flex;
 		flex-direction: column;
-		align-items: center;
 		text-align: center;
+		min-height: 100vh;
 	}
 
 	.text-gradient {
-		background-image: var(--gradient);
+		background: var(--gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
 	}
 
 	.logo-container {
 		background-color: white;
 		border-radius: 50%;
-		height: 200px;
-		width: 200px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		height: 300px;
+		width: 300px;
 		margin-bottom: 2rem;
 		background-image: url('/hero-picture.png');
 		background-position: center;
@@ -53,8 +84,11 @@ import Layout from '../layouts/Layout.astro';
 		background-repeat: no-repeat;
 	}
 
+	.hero-container {
+		flex-direction: column;
+	}
 	.hero-title {
-		font-size: 48px;
+		font-size: 56px;
 		margin: 0;
 	}
 
@@ -64,6 +98,35 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.hero-description {
-		font-size: 16px;
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+
+	.buttons-container {
+		margin-top: 2rem;
+		justify-content: space-around;
+		width: 400px;
+	}
+
+	.projects,
+	.tools {
+		width: 80%;
+	}
+
+	.tools-container {
+		display: grid;
+		place-content: center;
+		grid-template-columns: 300px 300px;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 20px 10px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			'. .'
+			'. .'
+			'. .';
+	}
+
+	.together {
+		font-size: 48px;
 	}
 </style>
