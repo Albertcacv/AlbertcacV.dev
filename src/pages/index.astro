@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='AlbertcacV'>
+	<main>
+		<div class='logo-container'></div>
+		<div>
+			<h1 class='text-gradient hero-title'>Hello, I'm Alberto,</h1>
+			<span class='hero-subtitle'>IT engineer based in Spain.</span>
+			<p class='hero-description'>
+				Software engineer | Front-end development | Back-end development
+			</p>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.text-gradient {
+		background-image: var(--gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+	.logo-container {
+		background-color: white;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2rem;
+		background-image: url('/hero-picture.png');
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.hero-title {
+		font-size: 48px;
+		margin: 0;
+	}
+
+	.hero-subtitle {
+		font-size: 32px;
+		margin: 0;
+	}
+
+	.hero-description {
+		font-size: 16px;
+	}
+</style>
