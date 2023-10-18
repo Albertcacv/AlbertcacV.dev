@@ -34,24 +34,30 @@ const { title } = Astro.props;
 			#ffa84b 75%
 		);
 	}
+	*,
+	*::after,
+	*::before {
+		box-sizing: border-box;
+	}
 	html {
 		font-family: system-ui, sans-serif;
 		background: var(--black-primary);
-		padding: 10px;
 	}
 	body {
 		margin: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
 	}
 
 	h1 {
-		font-size: 48px;
+		font-size: 42px;
 	}
 
 	h2 {
-		font-size: 32px;
+		font-size: 30px;
+	}
+
+	.text-gradient {
+		background: var(--gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 </style>

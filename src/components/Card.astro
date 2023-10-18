@@ -9,7 +9,7 @@ const { href, title } = Astro.props;
 
 <article class='card'>
 	<img src={href} />
-	<h3>{title}</h3>
+	<span>{title}</span>
 </article>
 <style>
 	.card {
@@ -17,22 +17,20 @@ const { href, title } = Astro.props;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		padding: 1px;
+		padding: 1rem;
 		background-color: var(--black-secondary);
 		border-radius: 7px;
-		width: 250px;
-		height: 200px;
 		color: var(--white-primary);
 	}
 
-	h3 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	span {
+		font-size: 1.5rem;
+		font-weight: 600;
 	}
 
 	img {
-		width: 150px;
-		height: 150px;
+		width: 50%;
+		max-width: 300px;
+		height: auto;
 	}
 </style>

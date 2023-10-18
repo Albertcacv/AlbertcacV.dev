@@ -1,0 +1,35 @@
+---
+import Card from './Card.astro';
+---
+
+<section class='stack'>
+	<h2 class='text-gradient title'>Tech Stack</h2>
+	<div class='stack-container'>
+		<Card title='REACT' href='/react.svg' />
+		<Card title='JAVASCRIPT' href='/javascript.svg' />
+		<Card title='NEXTJS' href='/nextjs.png' />
+		<Card title='NODEJS' href='/nodejs.svg' />
+	</div>
+</section>
+
+<style>
+	.stack {
+		padding: 10px;
+		text-align: center;
+	}
+	.stack-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		place-content: center;
+		gap: 1rem;
+		width: max-content;
+		height: fit-content;
+	}
+
+	@media (min-width: 600px) {
+		.stack-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+</style>
